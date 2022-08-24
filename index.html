@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather by City, Find Your Trip!</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <aside>
+        <div>
+            <h2>Search for a City</h2>
+            <form>
+                <div>
+                    <input type="text" name="city" id="cityNameInput" placeholder="San Diego">
+                </div>
+                <div>
+                    <button id="button-search">SEARCH</button>
+                </div>
+            </form>
+            <hr>
+            <div id="city-history">
+                <!-- This will be data from localStorage to record the history of search cities. -->
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div id="today-weather-container">
+            <!-- this is the container for today's weather -->
+            <h2>City Name (Date) icon</h2>
+            <h5>Temp:</h5>
+            <h5>Wind:</h5>
+            <h5>Humidity</h5>
+            <h5>UV Index: (with color changing)</h5>
+        </div>
+        <div id="forecast-5-days">
+            <h3>5-DAY Forecast:</h3>
+            <div id="forecast-container">
+                <div class="column">
+                    <h4>Date</h4>
+                    <div id="icon-forecast"></div>
+                    <h5>Temp:</h5>
+                    <h5>Wind:</h5>
+                    <h5>Humidity:</h5>
+                </div>
+                <div class="column">
+                    <h4>Date</h4>
+                    <div id="icon-forecast"></div>
+                    <h5>Temp:</h5>
+                    <h5>Wind:</h5>
+                    <h5>Humidity:</h5>
+                </div>
+                <div class="column">
+                    <h4>Date</h4>
+                    <div id="icon-forecast"></div>
+                    <h5>Temp:</h5>
+                    <h5>Wind:</h5>
+                    <h5>Humidity:</h5>
+                </div>
+                <div class="column">
+                    <h4>Date</h4>
+                    <div id="icon-forecast"></div>
+                    <h5>Temp:</h5>
+                    <h5>Wind:</h5>
+                    <h5>Humidity:</h5>
+                </div>
+                <div class="column">
+                    <h4>Date</h4>
+                    <div id="icon-forecast"></div>
+                    <h5>Temp:</h5>
+                    <h5>Wind:</h5>
+                    <h5>Humidity:</h5>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+</html>
