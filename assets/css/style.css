@@ -1,3 +1,17 @@
 body {
-    background-color: #B1E1FF;
+    background-color: #F9F5EB;
+}
+header {
+    background-color: #607EAA;
+    color: #f9f5eb;
+    padding: 15px 0px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+.sidebar {
+    background-color: #EAE3D2;
+    padding: 20px;
+    
 }
