@@ -20,12 +20,26 @@
     <div class="row container-fluid whole-container">
         <aside class="col-md-3 container sidebar">
             <h2 class="text-left" id="titleSearch">Search for a City</h2>
-            <form>
+            <form id="citySearchForm">
+                <div>
+                    <select id="countryNameInput">
+                        <option>
+                            United States of America
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <select id="stateNameInput">
+                        <option>
+                            California
+                        </option>
+                    </select>
+                </div>
                 <div>
                     <input type="text" name="city" id="cityNameInput" placeholder="Los Angeles">
                 </div>
                 <div>
-                    <button type="button" class="btn btn-primary" id="button-search">
+                    <button type="search" class="btn btn-primary" id="button-search">
                         SEARCH
                     </button>
                 </div>
@@ -33,9 +47,6 @@
             <hr>
             <div id="city-history">
                 <!-- This will be data from localStorage to record the history of search cities. -->
-                <button class="historyBtn">testing</button>
-                <button class="historyBtn">testing</button>
-                <button class="historyBtn">testing</button>
                 <button class="historyBtn">testing</button>
                 <button class="historyBtn">testing</button>
                 <button class="historyBtn">testing</button>

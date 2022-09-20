@@ -35,6 +35,20 @@ h1 {
     border-radius: 7px;
     padding-left: 10px;
 }
+#stateNameInput {
+    margin: 20px 0px 5px 0px;
+    width: 100%;
+    min-height: 35px;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+#countryNameInput {
+    margin: 20px 0px 5px 0px;
+    width: 100%;
+    min-height: 35px;
+    border-radius: 7px;
+    padding-left: 10px;
+}
 #button-search {
     margin: 0;
     margin-top: 15px;

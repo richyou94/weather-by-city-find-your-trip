@@ -2,6 +2,7 @@
 var cityNameInput = $('#cityNameInput');
 var searchBtn = $('#button-search');
 var cityHistContainer = $('#city-history')
+var citySearchFormEl = $('#citySearchForm')
 
 // jquery variables for today's weather
 var todayCity = $('#today-city-name');
@@ -19,7 +20,7 @@ var todayDate = moment().format("MM-DD-YYYY");
 //api keys
 var APIKey = "d729cb3acec026c9b365ba8ff6fc07c5"
 
-var city = "Los Angeles"
+// var city = "Los Angeles"
 var unit = "imperial"
 // var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=" + unit + "&appid=" + APIKey;
 
@@ -58,40 +59,50 @@ function getCoordinate() {
         lat: lat,
         lon: lon
       };
+      console.log("----GET COORDINATE----")
+      console.log(geoStored);
+      console.log("----GET COORDINATE----")
       localStorage.setItem('geoData', JSON.stringify(geoStored));
     })
 }
 function readLocalStorage () {
   var geoDataLog = JSON.parse(localStorage.getItem('geoData'));
-  // console.log(geoDataLog);
-  cityName = geoDataLog.city;
-  stateCode = geoDataLog.state;
-  countryCode = geoDataLog.country;
+  console.log("----READ LOCAL STORAGE----")
+  console.log(geoDataLog);
+  console.log("----READ LOCAL STORAGE----")
   lat = geoDataLog.lat;
   lon = geoDataLog.lon;
   var queryURL = "https://api.openweathermap.org/data/3.0/onecall?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey;
 }
 
+function init() {
+  getCoordinate();
+  setTimeout(function(){readLocalStorage()}, 1000);
+  setTimeout(function(){getApi()}, 1000);
+  
+}
 
 // Get api from openweather
 function getApi() {
-  getCoordinate();
-  readLocalStorage();
+  console.log("------GET API------")
   console.log(lat)
   console.log(lon)
   console.log(cityName);
+  console.log("------GET API------")
   queryURL = "https://api.openweathermap.org/data/3.0/onecall?lat=" + lat + "&lon=" + lon + "&exclulde=minutely,hourly,alerts&units=" + unit +"&appid=" + APIKey;
   fetch(queryURL)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
+      console.log("----Weather Data----")
       console.log(data);
+      console.log("----Weather Data----")
       appendTodayData(data);
       appendForecastData(data);
     })
 }
-getApi();
+
 function appendTodayData(data) {
   todayCity.text(`${cityName} (${todayDate})`);
   todayTemp.text(`Temp: ${data.current.temp}˚F`);
@@ -106,7 +117,6 @@ function appendTodayData(data) {
 
   var testingVar = data.current.uvi;
   var uvStatus = "";
-  console.log(testingVar)
   if (testingVar < 3) {
     todayUV.css('color', 'green')
     uvStatus = "Low"
@@ -160,3 +170,17 @@ function appendForecastData (data) {
   }
 }
 
+function searchCity(event) {
+  event.preventDefault();
+  var searchedCity = cityNameInput.val();
+  cityName = searchedCity;
+  geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${APIKey}`
+  cityNameInput.val("");
+  getCoordinate();
+  setTimeout(function(){readLocalStorage()}, 1000);
+  setTimeout(function(){getApi()}, 1000);
+}
+
+citySearchFormEl.on('submit', searchCity)
+
+init();
