@@ -88,11 +88,11 @@ main {
     margin-top: 30px;
     background: #F9F5EB;
     border: 2px solid #1C3879;
-    padding: 15px;
+    padding: 10px;
 }
 
 #forecast-container {
-    padding: 10px;
+    padding: 5px;
 }
 
 #forecast-5-days h3 {
@@ -133,3 +133,9 @@ footer h6 {
     color: #f9f5eb;
 }
 
+#forecase-container h4{
+    font-size: 1.2rem;
+}
+#forecast-container h5{
+    font-size: 1rem;
+}

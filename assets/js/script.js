@@ -30,6 +30,7 @@ var lat = "";
 var lon = "";
 
 // var queryURL = "https://api.openweathermap.org/data/3.0/onecall?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey;
+var iconNo = "";
 
 
 var geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${APIKey}`
@@ -87,6 +88,7 @@ function getApi() {
     .then(function (data) {
       console.log(data);
       appendTodayData(data);
+      appendForecastData(data);
     })
 }
 getApi();
@@ -95,8 +97,16 @@ function appendTodayData(data) {
   todayTemp.text(`Temp: ${data.current.temp}˚F`);
   todayWind.text(`Wind: ${data.current.wind_speed} mph`);
   todayHumid.text(`Humidity: ${data.current.humidity}%`);
-  var testingVar = data.current.humidity;
+  
+  var todayIcon = $('#today-icon');
+  iconNo = data.current.weather[0].icon;
+  let iconURL = `./assets/images/${iconNo}.png`
+  todayIcon.attr('src', iconURL);
+
+
+  var testingVar = data.current.uvi;
   var uvStatus = "";
+  console.log(testingVar)
   if (testingVar < 3) {
     todayUV.css('color', 'green')
     uvStatus = "Low"
@@ -111,8 +121,42 @@ function appendTodayData(data) {
     todayUV.css('color', 'red')
     uvStatus = "VERY HIGH"
   };
-  todayUV.text(`UV Index: ${data.current.uvi} (${uvStatus})`);
-  
-  
+  todayUV.text(`UV Index: ${data.current.uvi} (${uvStatus})`); 
+}
+
+function appendForecastData (data) {
+  // createArrayOfDate(data);
+  for (var i = 1; i < 6; i++) {
+    var forecastContainer = $('#forecast-container');
+    var forecastCol = $('<div>');
+    var forecastDates = $('<h4>');
+    var forecastIcons = $('<div>');
+    var forecastTemps = $('<h5>');
+    var forecastWinds = $('<h5>');
+    var forecastHumidity = $('<h5>');
+    var forecastIcon = $('<img>');
+
+    forecastCol.addClass('col');
+    forecastIcons.addClass('icon-forecast');
+
+    forecastDates.text(`${moment(data.daily[i].dt, 'X').format('MM-DD-YYYY')}`);
+    forecastTemps.text(`Temp: ${data.daily[i].temp.day}˚F`);
+    forecastWinds.text(`Wind: ${data.daily[i].wind_speed} mph`);
+    forecastHumidity.text(`Humidity: ${data.daily[i].humidity}%`);
+
+    iconNo = data.daily[i].weather[0].icon;
+    let iconURL = `http://openweathermap.org/img/wn/${iconNo}.png`
+    // let iconURL = `./assets/images/${iconNo}.png`
+    forecastIcon.attr('src', iconURL);
+    forecastIcons.append(forecastIcon);
+    
+    forecastCol.append(forecastDates);
+    forecastCol.append(forecastIcons);
+    forecastCol.append(forecastTemps);
+    forecastCol.append(forecastWinds);
+    forecastCol.append(forecastHumidity);
+
+    forecastContainer.append(forecastCol);
+  }
 }
 
