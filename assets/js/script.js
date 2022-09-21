@@ -1,4 +1,4 @@
-// variable for United States cities
+// variable for United States cities / states in Array
 var citiesOfUnitedStates = {
   "Alabama" : [
     "Alexander City",
@@ -1167,334 +1167,900 @@ var citiesOfUnitedStates = {
     "Rochester",
     "Salem",
     "Somersworth"
+  ],
+  "New Jersey" : [
+    "Asbury Park",
+    "Atlantic City",
+    "Bayonne",
+    "Bloomfield",
+    "Bordentown",
+    "Bound Brook",
+    "Bridgeton",
+    "Burlington",
+    "Caldwell",
+    "Camden",
+    "Cape May",
+    "Clifton",
+    "Cranford",
+    "East Orange",
+    "Edison",
+    "Elizabeth",
+    "Englewood",
+    "Fort Lee",
+    "Glassboro",
+    "Hackensack",
+    "Haddonfield",
+    "Hoboken",
+    "Irvington",
+    "Jersey City",
+    "Lakehurst",
+    "Lakewood",
+    "Long Beach",
+    "Long Branch",
+    "Madison",
+    "Menlo Park",
+    "Millburn",
+    "Millville",
+    "Montclair",
+    "Morristown",
+    "Mount Holly",
+    "New Brunswick",
+    "New Milford",
+    "Newark",
+    "Ocean City",
+    "Orange",
+    "Parsippany-Troy Hills",
+    "Passaic",
+    "Paterson",
+    "Perth Amboy",
+    "Plainfield",
+    "Princeton",
+    "Ridgewood",
+    "Roselle",
+    "Rutherford",
+    "Salem",
+    "Somerville",
+    "South Orange Village",
+    "Totowa",
+    "Trenton",
+    "Union",
+    "Union City",
+    "Vineland",
+    "Wayne",
+    "Weehawken",
+    "West New York",
+    "West Orange",
+    "Willingboro",
+    "Woodbridge"
+  ],
+  "New Mexico": [
+    "Acoma",
+    "Alamogordo",
+    "Albuquerque",
+    "Artesia",
+    "Belen",
+    "Carlsbad",
+    "Clovis",
+    "Deming",
+    "Farmington",
+    "Gallup",
+    "Grants",
+    "Hobbs",
+    "Las Cruces",
+    "Las Vegas",
+    "Los Alamos",
+    "Lovington",
+    "Portales",
+    "Raton",
+    "Roswell",
+    "Sante Fe",
+    "Shiprock",
+    "Silver City",
+    "Socorro",
+    "Taos",
+    "Truth or Consequences",
+    "Tucumcari"
+  ],
+  "New York" : [
+    "Albany",
+    "Amsterdam",
+    "Auburn",
+    "Babylon",
+    "Batavia",
+    "Beacon",
+    "Bedford",
+    "Binghamton",
+    "Bronx",
+    "Brooklyn",
+    "Buffalo",
+    "Chautauqua",
+    "Cheektowaga",
+    "Clinton",
+    "Cohoes",
+    "Coney Island",
+    "Cooperstown",
+    "Corning",
+    "Cortland",
+    "Crown Point",
+    "Dunkirk",
+    "East Aurora",
+    "East Hampton",
+    "Eastchester",
+    "Elmira",
+    "Flushing",
+    "Forest Hills",
+    "Fredonia",
+    "Garden City",
+    "Geneva",
+    "Glens Falls",
+    "Gloversville",
+    "Great Neck",
+    "Hammondsport",
+    "Harlem",
+    "Hempstead",
+    "Herkimer",
+    "Hudson",
+    "Huntington",
+    "Hyde Park",
+    "Ilion",
+    "Ithaca",
+    "Jamestown",
+    "Johnstown",
+    "Kingston",
+    "Lackawanna",
+    "Lake Placid",
+    "Levittown",
+    "Lockport",
+    "Mamaroneck",
+    "Manhattan",
+    "Massena",
+    "Middletown",
+    "Mineola",
+    "Mount Vernon",
+    "New Paltz",
+    "New Rochelle",
+    "New Windsor",
+    "New York City",
+    "Newburgh",
+    "Niagara Falls",
+    "North Hempstead",
+    "Nyack",
+    "Ogdensburg",
+    "Olean",
+    "Oneida",
+    "Oneonta",
+    "Ossining",
+    "Oswego",
+    "Oyster Bay",
+    "Palmyra",
+    "Peekskill",
+    "Plattsburgh",
+    "Port Washington",
+    "Potsdam",
+    "Poughkeepsie",
+    "Queens",
+    "Rensselaer",
+    "Rochester",
+    "Rome",
+    "Rotterdam",
+    "Rye",
+    "Sag Harbor",
+    "Saranac Lake",
+    "Saratoga Springs",
+    "Scarsdale",
+    "Schenectady",
+    "Seneca Falls",
+    "Southampton",
+    "Staten Island",
+    "Stony Brook",
+    "Stony Point",
+    "Syracuse",
+    "Tarrytown",
+    "Ticonderoga",
+    "Tonawanda",
+    "Troy",
+    "Utica",
+    "Watertown",
+    "Watervliet",
+    "Watkinds Glen",
+    "West Seneca",
+    "White Plains",
+    "Woodstock",
+    "Yonkers"
+  ],
+  "North Carolina" : [
+    "Asheboro",
+    "Asheville",
+    "Bath",
+    "Beaufort",
+    "Boone",
+    "Burlington",
+    "Chapel Hill",
+    "Charlotte",
+    "Concord",
+    "Durham",
+    "Edenton",
+    "Elizabeth City",
+    "Fayetteville",
+    "Gastonia",
+    "Goldsboro",
+    "Greensboro",
+    "Greenville",
+    "Halifax",
+    "Henderson",
+    "Hickory",
+    "High Point",
+    "Hillsborough",
+    "Jacksonville",
+    "Kinston",
+    "Kitty Hawk",
+    "Lumberton",
+    "Morehead City",
+    "Morganton",
+    "Nags Head",
+    "New Bern",
+    "Pinehurst",
+    "Raleigh",
+    "Rocky Mount",
+    "Salisbury",
+    "Shelby",
+    "Washington",
+    "Wilmington",
+    "Wilson",
+    "Winston-Salem"
+  ],
+  "North Dakota" : [
+    "Bismarck",
+    "Devils Lake",
+    "Dickinson",
+    "Fargo",
+    "Grand Forks",
+    "Jamestown",
+    "Mandan",
+    "Minot",
+    "Rugby",
+    "Valley City",
+    "Wahpeton",
+    "Williston"
+  ],
+  "Ohio" : [
+    "Akron",
+    "Alliance",
+    "Ashtabula",
+    "Athens",
+    "Barberton",
+    "Bedford",
+    "Bellefontaine",
+    "Bowling Green",
+    "Canton",
+    "Chillicothe",
+    "Cincinnati",
+    "Cleveland",
+    "Cleveland Heights",
+    "Columbus",
+    "Conneaut",
+    "Cuyahoga Falls",
+    "Dayton",
+    "Defiance",
+    "Delaware",
+    "East Cleveland",
+    "East Liverpool",
+    "Elyria",
+    "Euclid",
+    "Findlay",
+    "Gallipolis",
+    "Greenville",
+    "Hamilton",
+    "Kent",
+    "Kettering",
+    "Lakewood",
+    "Lancaster",
+    "Lima",
+    "Lorain",
+    "Mansfield",
+    "Marietta",
+    "Marion",
+    "Martins Ferry",
+    "Massillon",
+    "Mentor",
+    "Middletown",
+    "Milan",
+    "Mount Vernon",
+    "New Philadelphia",
+    "Newark",
+    "Niles",
+    "North College Hill",
+    "Norwalk",
+    "Oberlin",
+    "Painesville",
+    "Parma",
+    "Piqua",
+    "Portsmouth",
+    "Put-in-Bay",
+    "Salem",
+    "Sandusky",
+    "Shaker Heights",
+    "Springfield",
+    "Steubenville",
+    "Tiffin",
+    "Toledo",
+    "Urbana",
+    "Warren",
+    "Wooster",
+    "Worthington",
+    "Xenia",
+    "Yellow Springs",
+    "Youngstown",
+    "Zanesville"
+  ],
+  "Oklahoma" : [
+    "Ada",
+    "Altus",
+    "Alva",
+    "Anadarko",
+    "Ardmore",
+    "Bartlesville",
+    "Bethany",
+    "Chickasha",
+    "Claremore",
+    "Clinton",
+    "Cushing",
+    "Duncan",
+    "Durant",
+    "Edmond",
+    "El Reno",
+    "Elk City",
+    "Enid",
+    "Eufaula",
+    "Frederick",
+    "Guthrie",
+    "Guymon",
+    "Hobart",
+    "Holdenville",
+    "Huge",
+    "Lawton",
+    "McAlester",
+    "Miami",
+    "Midwest City",
+    "Moore",
+    "Muskogee",
+    "Norman",
+    "Oklahoma City",
+    "Okmulgee",
+    "Pauls Valley",
+    "Pawhuska",
+    "Perry",
+    "Ponca City",
+    "Pryor",
+    "Sallisaw",
+    "Sand Springs",
+    "Sapulpa",
+    "Seminole",
+    "Shawnee",
+    "Stillwater",
+    "Tahlequah",
+    "The Village",
+    "Tulsa",
+    "Vinita",
+    "Wewoka",
+    "Woodward"
+  ],
+  "Oregon" : [
+    "Albany",
+    "Ashland",
+    "Astoria",
+    "Baker City",
+    "Beaverton",
+    "Bend",
+    "Brookings",
+    "Burns",
+    "Coos Bay",
+    "Corvallis",
+    "Eugene",
+    "Grant Pass",
+    "Hillsboro",
+    "Hood River",
+    "Jacksonville",
+    "John Day",
+    "Klamath Falls",
+    "La Grande",
+    "Lake Oswego",
+    "Lakeview",
+    "McMinnville",
+    "Medford",
+    "Newberg",
+    "Ontario",
+    "Oregon City",
+    "Pendleton",
+    "Port Orford",
+    "Portland",
+    "Prineville",
+    "Redmond",
+    "Reedsport",
+    "Roseburg",
+    "Salem",
+    "Seaside",
+    "Springfield",
+    "The Dalles",
+    "Tillamook"
+  ],
+  "Pennsylvania" : [
+    "Abington",
+    "Aliquippa",
+    "Allentown",
+    "Altoona",
+    "Ambridge",
+    "Bedford",
+    "Bethlehem",
+    "Bloomsburg",
+    "Bradford",
+    "Bristol",
+    "Carbondale",
+    "Carlisle",
+    "Chambersburg",
+    "Chester",
+    "Columbia",
+    "Easter",
+    "Erie",
+    "Franklin",
+    "Germantown",
+    "Gettysburg",
+    "Greensburg",
+    "Hanover",
+    "Harmony",
+    "Harrisburg",
+    "Hazleton",
+    "Hershey",
+    "Homestead",
+    "Honesdale",
+    "Indiana",
+    "Jeannette",
+    "Jim Thorpe",
+    "Johnstown",
+    "Lancaster",
+    "Lebanon",
+    "Levittown",
+    "Lewistown",
+    "Lock Haven",
+    "Lower Southampton",
+    "McKeesport",
+    "Meadville",
+    "Middletown",
+    "Monroeville",
+    "Nanticoke",
+    "New Castle",
+    "New Hope",
+    "New Kensington",
+    "Norristown",
+    "Oil City",
+    "Philadelphia",
+    "Phoenixville",
+    "Pittsburgh",
+    "Pottstown",
+    "Pottsville",
+    "Reading",
+    "Scranton",
+    "Shamokin",
+    "Sharon",
+    "State College",
+    "Stroudsburg",
+    "Sunbury",
+    "Swarthmore",
+    "Tamaqua",
+    "Titusville",
+    "Uniontown",
+    "Warren",
+    "Washington",
+    "West Chester",
+    "Wilkes-Barre",
+    "Williamsport",
+    "York"
+  ], 
+  "Rhode Island" : [
+    "Barrington",
+    "Bristol",
+    "Central Falls",
+    "Cranston",
+    "East Greenwich",
+    "East Providence",
+    "Kingston",
+    "Middletown",
+    "Narragansett",
+    "Newport",
+    "North Kingstown",
+    "Pawtucket",
+    "Portsmouth",
+    "Providence",
+    "South Kingstown",
+    "Tiverton",
+    "Warren",
+    "Warwick",
+    "Westerly",
+    "Wickford",
+    "Woonsocket"
+  ],
+  "South Carolina" : [
+    "Abbeville",
+    "Aiken",
+    "Anderson",
+    "Beaufort",
+    "Camden",
+    "Charleston",
+    "Columbia",
+    "Darlington",
+    "Florence",
+    "Gaffney",
+    "Georgetown",
+    "Greenville",
+    "Greenwood",
+    "Hartsville",
+    "Lancaster",
+    "Mount Pleasant",
+    "Myrtle Beach",
+    "Orangeburg",
+    "Rock Hill",
+    "Spartanburg",
+    "Sumter",
+    "Union"
+  ], 
+  "South Dakota" : [
+    "Aberdeen",
+    "Belle Fourche",
+    "Brookings",
+    "Canton",
+    "Custer",
+    "De Smet",
+    "Deadwood",
+    "Hot Springs",
+    "Huron",
+    "Lead",
+    "Madison",
+    "Milbank",
+    "Mitchell",
+    "Mobridge",
+    "Pierre",
+    "Rapid City",
+    "Sioux Falls",
+    "Spearfish",
+    "Sturgis",
+    "Vermillion",
+    "Watertown",
+    "Yankton"
+  ],
+  "Tennessee" : [
+    "Alcoa",
+    "Athens",
+    "Chattanooga",
+    "Clarksville",
+    "Cleveland",
+    "Columbia",
+    "Cookeville",
+    "Dayton",
+    "Elizabethton",
+    "Franklin",
+    "Gallatin",
+    "Gatlinburg",
+    "Greeneville",
+    "Jackson",
+    "Johnson City",
+    "Jonesborough",
+    "Kingsport",
+    "Knoxville",
+    "Lebanon",
+    "Maryville",
+    "Memphis",
+    "Morristown",
+    "Murfreesboro",
+    "Nashville",
+    "Norris",
+    "Oak Ridge",
+    "Shelbyville",
+    "Tullahoma",
+  ],
+  "Texas" : [
+    "Abilene",
+    "Alpine",
+    "Amarillo",
+    "Arlington",
+    "Austin",
+    "Baytown",
+    "Beaumont",
+    "Big Spring",
+    "Borger",
+    "Brownsville",
+    "Bryan",
+    "Canyon",
+    "Cleburne",
+    "College Station",
+    "Corpus Christi",
+    "Crystal City",
+    "Dallas",
+    "Del Rio",
+    "Denison",
+    "Denton",
+    "Eagle Pass",
+    "Edinburg",
+    "El Paso",
+    "Fort Worth",
+    "Freeport",
+    "Galveston",
+    "Garland",
+    "Goliad",
+    "Greenville",
+    "Harlingen",
+    "Houston",
+    "Huntsville",
+    "Irving",
+    "Johnson City",
+    "Kilgore",
+    "Killeen",
+    "Kingsville",
+    "Laredo",
+    "Longview",
+    "Lubbock",
+    "Lufkin",
+    "Marshall",
+    "McAllen",
+    "McKinney",
+    "Mesquite",
+    "Midland",
+    "Mission",
+    "Nacogdoches",
+    "New Braunfels",
+    "Odessa",
+    "Orange",
+    "Pampa",
+    "Paris",
+    "Pasadena",
+    "Pecos",
+    "Pharr",
+    "Plainview",
+    "Plano",
+    "Port Arthur",
+    "Port Lavaca",
+    "Richardson",
+    "San Angelo",
+    "San Antonio",
+    "San Felipe",
+    "San Marcos",
+    "Sherman", 
+    "Sweetwater",
+    "Temple",
+    "Texarkana",
+    "Texas City",
+    "Tyler",
+    "Uvalde",
+    "Victoria",
+    "Waco",
+    "Weatherfood",
+    "Wichita Falls",
+    "Ysleta"
+  ],
+  "Utah" : [
+    "Alta",
+    "American Fork",
+    "Bountiful",
+    "Brigham City",
+    "Cedar City",
+    "Clearfield",
+    "Delta",
+    "Fillmore",
+    "Green River",
+    "Heber City",
+    "Kanab",
+    "Layton",
+    "Lehi",
+    "Logan",
+    "Manti",
+    "Moab",
+    "Monticello",
+    "Murray",
+    "Nephi",
+    "Ogden",
+    "Orderville",
+    "Orem",
+    "Panguitch",
+    "Park City",
+    "Payson",
+    "Price",
+    "Provo",
+    "Saint George",
+    "Salt Lake City",
+    "Spanish Fork",
+    "Springville",
+    "Tooele",
+    "Vernal"
+  ],
+  "Vermont" : [
+    "Barre",
+    "Bellows Falls",
+    "Bennington",
+    "Brattleboro",
+    "Burlington",
+    "Essex",
+    "Manchester",
+    "Middlebury",
+    "Montpelier",
+    "Newport",
+    "Plymouth",
+    "Rutland",
+    "Saint Albans",
+    "Saint Johnsbury",
+    "Sharon",
+    "Winooski"
+  ],
+  "Virginia" : [
+    "Abingdon",
+    "Alexandria",
+    "Bristol",
+    "Charlottesville",
+    "Chesapeake",
+    "Danville",
+    "Fairfax",
+    "Falls Church",
+    "Fredericksburg",
+    "Hampton",
+    "Hanover",
+    "Hopewell",
+    "Lexington",
+    "Lynchburg",
+    "Manassas",
+    "Martinsville",
+    "New Market",
+    "Newport News",
+    "Norfolk",
+    "Petersburg",
+    "Portsmouth",
+    "Reston",
+    "Richmond",
+    "Roanoke",
+    "Staunton",
+    "Suffolk",
+    "Virginia Beach",
+    "Waynesboro",
+    "Williamsburg",
+    "Winchester"
+  ],
+  "Washington" : [
+    "Aberdeen",
+    "Anacortes", 
+    "Auburn",
+    "Bellevue",
+    "Bellingham",
+    "Bremerton",
+    "Centralia",
+    "Coulee Dam",
+    "Coupeville",
+    "Ellensburg",
+    "Ephrata",
+    "Everett",
+    "Hoquiam",
+    "Kelso",
+    "Kennewick",
+    "Longview",
+    "Moses Lake",
+    "Oak Harbor",
+    "Olympia",
+    "Pasco",
+    "Point Roberts",
+    "Port Angeles",
+    "Pullman",
+    "Puyallup",
+    "Redmond",
+    "Renton",
+    "Richland",
+    "Seattle",
+    "Spokane",
+    "Tacoma",
+    "Vancouver",
+    "Walla Walla",
+    "Wenatchee",
+    "Yakima"
+  ],
+  "West Virginia" : [
+    "Bath",
+    "Beckley",
+    "Bluefield",
+    "Buckhannon",
+    "Charles Town",
+    "Charleston",
+    "Clarksburg",
+    "Elkins",
+    "Fairmont",
+    "Grafton",
+    "Harpers Ferry",
+    "Hillsboro",
+    "Hinton",
+    "Huntington",
+    "Keyser",
+    "Lewisburg",
+    "Logan",
+    "Martinsburg",
+    "Morgantown",
+    "Moundsville",
+    "New Martinsville",
+    "Parkersburg",
+    "Philippi",
+    "Point Pleasant",
+    "Princeton",
+    "Romney",
+    "Shepherdstown",
+    "South Charleston",
+    "Summersville",
+    "Weirton",
+    "Welch",
+    "Wellsburg",
+    "Weston",
+    "Wheeling",
+    "White Sulphur Springs",
+    "Williamson"
+  ],
+  "Wisconsin" : [
+    "Appleton",
+    "Ashland",
+    "Baraboo",
+    "Belmont",
+    "Beloit",
+    "Eau Claire",
+    "Fond du Lac",
+    "Green Bay",
+    "Hayward",
+    "Janesville",
+    "Kenosha",
+    "La Crosse",
+    "Lake Geneva",
+    "Madison",
+    "Manitowoc",
+    "Marinette",
+    "Menasha",
+    "Milwaukee",
+    "Neenah",
+    "New Glarus",
+    "Oconto",
+    "Oshkosh",
+    "Peshtigo",
+    "Portage",
+    "Prairie du Chien",
+    "Racine",
+    "Rhinelander",
+    "Ripon",
+    "Sheboygan",
+    "Spring Green",
+    "Stevens Point",
+    "Sturgeon Bay",
+    "Superior",
+    "Waukesha",
+    "Wausau",
+    "Wauwatosa",
+    "West Allis",
+    "West Bend",
+    "Wisconsin Dells"
+  ],
+  "Wyoming" : [
+    "Buffalo",
+    "Casper",
+    "Cheyenne",
+    "Cody",
+    "Douglas",
+    "Evanston",
+    "Gillette",
+    "Green River",
+    "Jackson",
+    "Lander",
+    "Laramie",
+    "Newcastle",
+    "Powell",
+    "Rawlins",
+    "Riverton",
+    "Rock Springs",
+    "Sheridan",
+    "Ten Sleep",
+    "Thermopolis",
+    "Torrington",
+    "Worland"
   ]
 }
 
-//jquery var for Search cities
-var cityNameInput = $('#cityNameInput');
-var searchBtn = $('#button-search');
-var cityHistContainer = $('#city-history')
-var citySearchFormEl = $('#citySearchForm')
-
-// jquery variables for today's weather
-var todayCity = $('#today-city-name');
-var todayTemp = $('#today-temp');
-var todayWind = $('#today-wind');
-var todayHumid = $('#today-humidity');
-var todayUV = $('#today-UV-index');
-
-//forecast container variables
-var forcastContainer = $('#forecast-container');
-
-// moment js variables
-var todayDate = moment().format("MM-DD-YYYY");
-
-//api keys
-var APIKey = "d729cb3acec026c9b365ba8ff6fc07c5"
-
-// var city = "Los Angeles"
-var unit = "imperial"
-// var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=" + unit + "&appid=" + APIKey;
-
-var cityName = "";
-var stateCode = "";
-var stateIndex = "";
-var countryCode = "";
-var lat = "";
-var lon = "";
-
-// var queryURL = "https://api.openweathermap.org/data/3.0/onecall?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey;
-var iconNo = "";
-
-
-var geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${APIKey}`
-
-var geoStored = {
-  city: cityName,
-  state: stateCode,
-  country: countryCode,
-  lat: lat,
-  lon: lon
-}
-
-
-citySearchFormEl.on('submit', searchCity)
-
-
-
-
-//////////////Country Selection //////////////
-var countryNameSelect = $('#countryNameInput');  
-var listOfCountries = [
-  {"name": "Afghanistan", "code": "AF"},
-  {"name": "Albania", "code": "AL"},
-  {"name": "Åland Islands", "code": "AX"},
-  {"name": "Algeria", "code": "DZ"},
-  {"name": "American Samoa", "code": "AS"},
-  {"name": "Andorra", "code": "AD"},
-  {"name": "Angola", "code": "AO"},
-  {"name": "Anguilla", "code": "AI"},
-  {"name": "Antarctica", "code": "AQ"},
-  {"name": "Antigua and Barbuda", "code": "AG"},
-  {"name": "Argentina", "code": "AR"},
-  {"name": "Armenia", "code": "AM"},
-  {"name": "Aruba", "code": "AW"},
-  {"name": "Australia", "code": "AU"},
-  {"name": "Austria", "code": "AT"},
-  {"name": "Azerbaijan", "code": "AZ"},
-  {"name": "Bahamas (the)", "code": "BS"},
-  {"name": "Bahrain", "code": "BH"},
-  {"name": "Bangladesh", "code": "BD"},
-  {"name": "Barbados", "code": "BB"},
-  {"name": "Belarus", "code": "BY"},
-  {"name": "Belgium", "code": "BE"},
-  {"name": "Belize", "code": "BZ"},
-  {"name": "Benin", "code": "BJ"},
-  {"name": "Bermuda", "code": "BM"},
-  {"name": "Bhutan", "code": "BT"},
-  {"name": "Bolivia (Plurinational State of)", "code": "BO"},
-  {"name": "Bonaire, Sint Eustatius and Saba", "code": "BQ"},
-  {"name": "Bosnia and Herzegovina", "code": "BA"},
-  {"name": "Botswana", "code": "BW"},
-  {"name": "Bouvet Island", "code": "BV"},
-  {"name": "Brazil", "code": "BR"},
-  {"name": "British Indian Ocean Territory (the)", "code": "IO"},
-  {"name": "Brunei Darussalam", "code": "BN"},
-  {"name": "Bulgaria", "code": "BG"},
-  {"name": "Burkina Faso", "code": "BF"},
-  {"name": "Burundi", "code": "BI"},
-  {"name": "Cabo Verde", "code": "CV"},
-  {"name": "Cambodia", "code": "KH"},
-  {"name": "Cameroon", "code": "CM"},
-  {"name": "Canada", "code": "CA"},
-  {"name": "Cayman Islands (the)", "code": "KY"},
-  {"name": "Central African Republic (the)", "code": "CF"},
-  {"name": "Chad", "code": "TD"},
-  {"name": "Chile", "code": "CL"},
-  {"name": "China", "code": "CN"},
-  {"name": "Christmas Island", "code": "CX"},
-  {"name": "Cocos (Keeling) Islands (the)", "code": "CC"},
-  {"name": "Colombia", "code": "CO"},
-  {"name": "Comoros (the)", "code": "KM"},
-  {"name": "Congo (the Democratic Republic of the)", "code": "CD"},
-  {"name": "Congo (the)", "code": "CG"},
-  {"name": "Cook Islands (the)", "code": "CK"},
-  {"name": "Costa Rica", "code": "CR"},
-  {"name": "Croatia", "code": "HR"},
-  {"name": "Cuba", "code": "CU"},
-  {"name": "Curaçao", "code": "CW"},
-  {"name": "Cyprus", "code": "CY"},
-  {"name": "Czechia", "code": "CZ"},
-  {"name": "Côte d'Ivoire", "code": "CI"},
-  {"name": "Denmark", "code": "DK"},
-  {"name": "Djibouti", "code": "DJ"},
-  {"name": "Dominica", "code": "DM"},
-  {"name": "Dominican Republic (the)", "code": "DO"},
-  {"name": "Ecuador", "code": "EC"},
-  {"name": "Egypt", "code": "EG"},
-  {"name": "El Salvador", "code": "SV"},
-  {"name": "Equatorial Guinea", "code": "GQ"},
-  {"name": "Eritrea", "code": "ER"},
-  {"name": "Estonia", "code": "EE"},
-  {"name": "Eswatini", "code": "SZ"},
-  {"name": "Ethiopia", "code": "ET"},
-  {"name": "Falkland Islands (the) [Malvinas]", "code": "FK"},
-  {"name": "Faroe Islands (the)", "code": "FO"},
-  {"name": "Fiji", "code": "FJ"},
-  {"name": "Finland", "code": "FI"},
-  {"name": "France", "code": "FR"},
-  {"name": "French Guiana", "code": "GF"},
-  {"name": "French Polynesia", "code": "PF"},
-  {"name": "French Southern Territories (the)", "code": "TF"},
-  {"name": "Gabon", "code": "GA"},
-  {"name": "Gambia (the)", "code": "GM"},
-  {"name": "Georgia", "code": "GE"},
-  {"name": "Germany", "code": "DE"},
-  {"name": "Ghana", "code": "GH"},
-  {"name": "Gibraltar", "code": "GI"},
-  {"name": "Greece", "code": "GR"},
-  {"name": "Greenland", "code": "GL"},
-  {"name": "Grenada", "code": "GD"},
-  {"name": "Guadeloupe", "code": "GP"},
-  {"name": "Guam", "code": "GU"},
-  {"name": "Guatemala", "code": "GT"},
-  {"name": "Guernsey", "code": "GG"},
-  {"name": "Guinea", "code": "GN"},
-  {"name": "Guinea-Bissau", "code": "GW"},
-  {"name": "Guyana", "code": "GY"},
-  {"name": "Haiti", "code": "HT"},
-  {"name": "Heard Island and McDonald Islands", "code": "HM"},
-  {"name": "Holy See (the)", "code": "VA"},
-  {"name": "Honduras", "code": "HN"},
-  {"name": "Hong Kong", "code": "HK"},
-  {"name": "Hungary", "code": "HU"},
-  {"name": "Iceland", "code": "IS"},
-  {"name": "India", "code": "IN"},
-  {"name": "Indonesia", "code": "ID"},
-  {"name": "Iran (Islamic Republic of)", "code": "IR"},
-  {"name": "Iraq", "code": "IQ"},
-  {"name": "Ireland", "code": "IE"},
-  {"name": "Isle of Man", "code": "IM"},
-  {"name": "Israel", "code": "IL"},
-  {"name": "Italy", "code": "IT"},
-  {"name": "Jamaica", "code": "JM"},
-  {"name": "Japan", "code": "JP"},
-  {"name": "Jersey", "code": "JE"},
-  {"name": "Jordan", "code": "JO"},
-  {"name": "Kazakhstan", "code": "KZ"},
-  {"name": "Kenya", "code": "KE"},
-  {"name": "Kiribati", "code": "KI"},
-  {"name": "Korea (North Korea, the Democratic People's Republic of)", "code": "KP"},
-  {"name": "Korea (South Korea, the Republic of)", "code": "KR"},
-  {"name": "Kosovo", "code": "XK"},
-  {"name": "Kuwait", "code": "KW"},
-  {"name": "Kyrgyzstan", "code": "KG"},
-  {"name": "Lao People's Democratic Republic (the)", "code": "LA"},
-  {"name": "Latvia", "code": "LV"},
-  {"name": "Lebanon", "code": "LB"},
-  {"name": "Lesotho", "code": "LS"},
-  {"name": "Liberia", "code": "LR"},
-  {"name": "Libya", "code": "LY"},
-  {"name": "Liechtenstein", "code": "LI"},
-  {"name": "Lithuania", "code": "LT"},
-  {"name": "Luxembourg", "code": "LU"},
-  {"name": "Macao", "code": "MO"},
-  {"name": "Madagascar", "code": "MG"},
-  {"name": "Malawi", "code": "MW"},
-  {"name": "Malaysia", "code": "MY"},
-  {"name": "Maldives", "code": "MV"},
-  {"name": "Mali", "code": "ML"},
-  {"name": "Malta", "code": "MT"},
-  {"name": "Marshall Islands (the)", "code": "MH"},
-  {"name": "Martinique", "code": "MQ"},
-  {"name": "Mauritania", "code": "MR"},
-  {"name": "Mauritius", "code": "MU"},
-  {"name": "Mayotte", "code": "YT"},
-  {"name": "Mexico", "code": "MX"},
-  {"name": "Micronesia (Federated States of)", "code": "FM"},
-  {"name": "Moldova (the Republic of)", "code": "MD"},
-  {"name": "Monaco", "code": "MC"},
-  {"name": "Mongolia", "code": "MN"},
-  {"name": "Montenegro", "code": "ME"},
-  {"name": "Montserrat", "code": "MS"},
-  {"name": "Morocco", "code": "MA"},
-  {"name": "Mozambique", "code": "MZ"},
-  {"name": "Myanmar", "code": "MM"},
-  {"name": "Namibia", "code": "NA"},
-  {"name": "Nauru", "code": "NR"},
-  {"name": "Nepal", "code": "NP"},
-  {"name": "Netherlands (the)", "code": "NL"},
-  {"name": "Netherlands Antilles", "code": "AN"},
-  {"name": "New Caledonia", "code": "NC"},
-  {"name": "New Zealand", "code": "NZ"},
-  {"name": "Nicaragua", "code": "NI"},
-  {"name": "Niger (the)", "code": "NE"},
-  {"name": "Nigeria", "code": "NG"},
-  {"name": "Niue", "code": "NU"},
-  {"name": "Norfolk Island", "code": "NF"},
-  {"name": "Northern Mariana Islands (the)", "code": "MP"},
-  {"name": "Norway", "code": "NO"},
-  {"name": "Oman", "code": "OM"},
-  {"name": "Pakistan", "code": "PK"},
-  {"name": "Palau", "code": "PW"},
-  {"name": "Palestine, State of", "code": "PS"},
-  {"name": "Panama", "code": "PA"},
-  {"name": "Papua New Guinea", "code": "PG"},
-  {"name": "Paraguay", "code": "PY"},
-  {"name": "Peru", "code": "PE"},
-  {"name": "Philippines (the)", "code": "PH"},
-  {"name": "Pitcairn", "code": "PN"},
-  {"name": "Poland", "code": "PL"},
-  {"name": "Portugal", "code": "PT"},
-  {"name": "Puerto Rico", "code": "PR"},
-  {"name": "Qatar", "code": "QA"},
-  {"name": "Republic of North Macedonia", "code": "MK"},
-  {"name": "Romania", "code": "RO"},
-  {"name": "Russian Federation (the)", "code": "RU"},
-  {"name": "Rwanda", "code": "RW"},
-  {"name": "Réunion", "code": "RE"},
-  {"name": "Saint Barthélemy", "code": "BL"},
-  {"name": "Saint Helena, Ascension and Tristan da Cunha", "code": "SH"},
-  {"name": "Saint Kitts and Nevis", "code": "KN"},
-  {"name": "Saint Lucia", "code": "LC"},
-  {"name": "Saint Martin (French part)", "code": "MF"},
-  {"name": "Saint Pierre and Miquelon", "code": "PM"},
-  {"name": "Saint Vincent and the Grenadines", "code": "VC"},
-  {"name": "Samoa", "code": "WS"},
-  {"name": "San Marino", "code": "SM"},
-  {"name": "Sao Tome and Principe", "code": "ST"},
-  {"name": "Saudi Arabia", "code": "SA"},
-  {"name": "Senegal", "code": "SN"},
-  {"name": "Serbia", "code": "RS"},
-  {"name": "Seychelles", "code": "SC"},
-  {"name": "Sierra Leone", "code": "SL"},
-  {"name": "Singapore", "code": "SG"},
-  {"name": "Sint Maarten (Dutch part)", "code": "SX"},
-  {"name": "Slovakia", "code": "SK"},
-  {"name": "Slovenia", "code": "SI"},
-  {"name": "Solomon Islands", "code": "SB"},
-  {"name": "Somalia", "code": "SO"},
-  {"name": "South Africa", "code": "ZA"},
-  {"name": "South Georgia and the South Sandwich Islands", "code": "GS"},
-  {"name": "South Sudan", "code": "SS"},
-  {"name": "Spain", "code": "ES"},
-  {"name": "Sri Lanka", "code": "LK"},
-  {"name": "Sudan (the)", "code": "SD"},
-  {"name": "Suriname", "code": "SR"},
-  {"name": "Svalbard and Jan Mayen", "code": "SJ"},
-  {"name": "Sweden", "code": "SE"},
-  {"name": "Switzerland", "code": "CH"},
-  {"name": "Syrian Arab Republic", "code": "SY"},
-  {"name": "Taiwan (Province of China)", "code": "TW"},
-  {"name": "Tajikistan", "code": "TJ"},
-  {"name": "Tanzania, United Republic of", "code": "TZ"},
-  {"name": "Thailand", "code": "TH"},
-  {"name": "Timor-Leste", "code": "TL"},
-  {"name": "Togo", "code": "TG"},
-  {"name": "Tokelau", "code": "TK"},
-  {"name": "Tonga", "code": "TO"},
-  {"name": "Trinidad and Tobago", "code": "TT"},
-  {"name": "Tunisia", "code": "TN"},
-  {"name": "Turkey", "code": "TR"},
-  {"name": "Turkmenistan", "code": "TM"},
-  {"name": "Turks and Caicos Islands (the)", "code": "TC"},
-  {"name": "Tuvalu", "code": "TV"},
-  {"name": "Uganda", "code": "UG"},
-  {"name": "Ukraine", "code": "UA"},
-  {"name": "United Arab Emirates (the)", "code": "AE"},
-  {"name": "United Kingdom of Great Britain and Northern Ireland (the)", "code": "GB"},
-  {"name": "United States Minor Outlying Islands (the)", "code": "UM"},
-  {"name": "United States of America (the)", "code": "US"},
-  {"name": "Uruguay", "code": "UY"},
-  {"name": "Uzbekistan", "code": "UZ"},
-  {"name": "Vanuatu", "code": "VU"},
-  {"name": "Venezuela (Bolivarian Republic of)", "code": "VE"},
-  {"name": "Viet Nam", "code": "VN"},
-  {"name": "Virgin Islands (British)", "code": "VG"},
-  {"name": "Virgin Islands (U.S.)", "code": "VI"},
-  {"name": "Wallis and Futuna", "code": "WF"},
-  {"name": "Western Sahara", "code": "EH"},
-  {"name": "Yemen", "code": "YE"},
-  {"name": "Zambia", "code": "ZM"},
-  {"name": "Zimbabwe", "code": "ZW"}
-]
-function appendCountries() {
-  for (var i = 0; i < listOfCountries.length; i++){
-  let listOfOption = $('<option>');
-  listOfOption.text(listOfCountries[i].name)
-  listOfOption.attr('data-index', i);
-  countryNameSelect.append(listOfOption);
-  };
-  $('*[data-index="235"]').attr('selected', "")
-}
-function findCountryCode() {
-  var countryIndex = countryNameSelect.find(':selected')[0].dataset.index
-  countryCode = listOfCountries[countryIndex].code
-}
-
-
-//////////////STATE Selection //////////////
-var stateNameSelect = $('#stateNameInput');
 var listOfStateUS = [
   {"name":"Alabama","code":"AL"},
   {"name":"Alaska","code":"AK"},
@@ -1547,6 +2113,337 @@ var listOfStateUS = [
   {"name":"Wisconsin","code":"WI"},
   {"name":"Wyoming","code":"WY"}
 ]
+
+//jquery var for Search cities
+var cityNameInput = $('#cityNameInput');
+var searchBtn = $('#button-search');
+var cityHistContainer = $('#city-history')
+var citySearchFormEl = $('#citySearchForm')
+var searchHistoryList = [];
+// jquery variables for today's weather
+var todayCity = $('#today-city-name');
+var todayTemp = $('#today-temp');
+var todayWind = $('#today-wind');
+var todayHumid = $('#today-humidity');
+var todayUV = $('#today-UV-index');
+
+//forecast container variables
+var forcastContainer = $('#forecast-container');
+
+// moment js variables
+var todayDate = moment().format("MM-DD-YYYY");
+
+//api keys
+var APIKey = "d729cb3acec026c9b365ba8ff6fc07c5"
+
+// var city = "Los Angeles"
+var unit = "imperial"
+// var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=" + unit + "&appid=" + APIKey;
+
+var cityName = "";
+var stateCode = "";
+var stateIndex = "";
+var countryCode = "";
+var lat = "";
+var lon = "";
+
+// var queryURL = "https://api.openweathermap.org/data/3.0/onecall?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey;
+var iconNo = "";
+
+
+var geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${APIKey}`
+
+var geoStored = {
+  city: cityName,
+  state: stateCode,
+  country: countryCode,
+  lat: lat,
+  lon: lon
+}
+
+
+
+
+
+
+
+//////////////Country Selection //////////////
+var countryNameSelect = $('#countryNameInput');  
+// var listOfCountries = [
+//   {"name": "Afghanistan", "code": "AF"},
+//   {"name": "Albania", "code": "AL"},
+//   {"name": "Åland Islands", "code": "AX"},
+//   {"name": "Algeria", "code": "DZ"},
+//   {"name": "American Samoa", "code": "AS"},
+//   {"name": "Andorra", "code": "AD"},
+//   {"name": "Angola", "code": "AO"},
+//   {"name": "Anguilla", "code": "AI"},
+//   {"name": "Antarctica", "code": "AQ"},
+//   {"name": "Antigua and Barbuda", "code": "AG"},
+//   {"name": "Argentina", "code": "AR"},
+//   {"name": "Armenia", "code": "AM"},
+//   {"name": "Aruba", "code": "AW"},
+//   {"name": "Australia", "code": "AU"},
+//   {"name": "Austria", "code": "AT"},
+//   {"name": "Azerbaijan", "code": "AZ"},
+//   {"name": "Bahamas (the)", "code": "BS"},
+//   {"name": "Bahrain", "code": "BH"},
+//   {"name": "Bangladesh", "code": "BD"},
+//   {"name": "Barbados", "code": "BB"},
+//   {"name": "Belarus", "code": "BY"},
+//   {"name": "Belgium", "code": "BE"},
+//   {"name": "Belize", "code": "BZ"},
+//   {"name": "Benin", "code": "BJ"},
+//   {"name": "Bermuda", "code": "BM"},
+//   {"name": "Bhutan", "code": "BT"},
+//   {"name": "Bolivia (Plurinational State of)", "code": "BO"},
+//   {"name": "Bonaire, Sint Eustatius and Saba", "code": "BQ"},
+//   {"name": "Bosnia and Herzegovina", "code": "BA"},
+//   {"name": "Botswana", "code": "BW"},
+//   {"name": "Bouvet Island", "code": "BV"},
+//   {"name": "Brazil", "code": "BR"},
+//   {"name": "British Indian Ocean Territory (the)", "code": "IO"},
+//   {"name": "Brunei Darussalam", "code": "BN"},
+//   {"name": "Bulgaria", "code": "BG"},
+//   {"name": "Burkina Faso", "code": "BF"},
+//   {"name": "Burundi", "code": "BI"},
+//   {"name": "Cabo Verde", "code": "CV"},
+//   {"name": "Cambodia", "code": "KH"},
+//   {"name": "Cameroon", "code": "CM"},
+//   {"name": "Canada", "code": "CA"},
+//   {"name": "Cayman Islands (the)", "code": "KY"},
+//   {"name": "Central African Republic (the)", "code": "CF"},
+//   {"name": "Chad", "code": "TD"},
+//   {"name": "Chile", "code": "CL"},
+//   {"name": "China", "code": "CN"},
+//   {"name": "Christmas Island", "code": "CX"},
+//   {"name": "Cocos (Keeling) Islands (the)", "code": "CC"},
+//   {"name": "Colombia", "code": "CO"},
+//   {"name": "Comoros (the)", "code": "KM"},
+//   {"name": "Congo (the Democratic Republic of the)", "code": "CD"},
+//   {"name": "Congo (the)", "code": "CG"},
+//   {"name": "Cook Islands (the)", "code": "CK"},
+//   {"name": "Costa Rica", "code": "CR"},
+//   {"name": "Croatia", "code": "HR"},
+//   {"name": "Cuba", "code": "CU"},
+//   {"name": "Curaçao", "code": "CW"},
+//   {"name": "Cyprus", "code": "CY"},
+//   {"name": "Czechia", "code": "CZ"},
+//   {"name": "Côte d'Ivoire", "code": "CI"},
+//   {"name": "Denmark", "code": "DK"},
+//   {"name": "Djibouti", "code": "DJ"},
+//   {"name": "Dominica", "code": "DM"},
+//   {"name": "Dominican Republic (the)", "code": "DO"},
+//   {"name": "Ecuador", "code": "EC"},
+//   {"name": "Egypt", "code": "EG"},
+//   {"name": "El Salvador", "code": "SV"},
+//   {"name": "Equatorial Guinea", "code": "GQ"},
+//   {"name": "Eritrea", "code": "ER"},
+//   {"name": "Estonia", "code": "EE"},
+//   {"name": "Eswatini", "code": "SZ"},
+//   {"name": "Ethiopia", "code": "ET"},
+//   {"name": "Falkland Islands (the) [Malvinas]", "code": "FK"},
+//   {"name": "Faroe Islands (the)", "code": "FO"},
+//   {"name": "Fiji", "code": "FJ"},
+//   {"name": "Finland", "code": "FI"},
+//   {"name": "France", "code": "FR"},
+//   {"name": "French Guiana", "code": "GF"},
+//   {"name": "French Polynesia", "code": "PF"},
+//   {"name": "French Southern Territories (the)", "code": "TF"},
+//   {"name": "Gabon", "code": "GA"},
+//   {"name": "Gambia (the)", "code": "GM"},
+//   {"name": "Georgia", "code": "GE"},
+//   {"name": "Germany", "code": "DE"},
+//   {"name": "Ghana", "code": "GH"},
+//   {"name": "Gibraltar", "code": "GI"},
+//   {"name": "Greece", "code": "GR"},
+//   {"name": "Greenland", "code": "GL"},
+//   {"name": "Grenada", "code": "GD"},
+//   {"name": "Guadeloupe", "code": "GP"},
+//   {"name": "Guam", "code": "GU"},
+//   {"name": "Guatemala", "code": "GT"},
+//   {"name": "Guernsey", "code": "GG"},
+//   {"name": "Guinea", "code": "GN"},
+//   {"name": "Guinea-Bissau", "code": "GW"},
+//   {"name": "Guyana", "code": "GY"},
+//   {"name": "Haiti", "code": "HT"},
+//   {"name": "Heard Island and McDonald Islands", "code": "HM"},
+//   {"name": "Holy See (the)", "code": "VA"},
+//   {"name": "Honduras", "code": "HN"},
+//   {"name": "Hong Kong", "code": "HK"},
+//   {"name": "Hungary", "code": "HU"},
+//   {"name": "Iceland", "code": "IS"},
+//   {"name": "India", "code": "IN"},
+//   {"name": "Indonesia", "code": "ID"},
+//   {"name": "Iran (Islamic Republic of)", "code": "IR"},
+//   {"name": "Iraq", "code": "IQ"},
+//   {"name": "Ireland", "code": "IE"},
+//   {"name": "Isle of Man", "code": "IM"},
+//   {"name": "Israel", "code": "IL"},
+//   {"name": "Italy", "code": "IT"},
+//   {"name": "Jamaica", "code": "JM"},
+//   {"name": "Japan", "code": "JP"},
+//   {"name": "Jersey", "code": "JE"},
+//   {"name": "Jordan", "code": "JO"},
+//   {"name": "Kazakhstan", "code": "KZ"},
+//   {"name": "Kenya", "code": "KE"},
+//   {"name": "Kiribati", "code": "KI"},
+//   {"name": "Korea (North Korea, the Democratic People's Republic of)", "code": "KP"},
+//   {"name": "Korea (South Korea, the Republic of)", "code": "KR"},
+//   {"name": "Kosovo", "code": "XK"},
+//   {"name": "Kuwait", "code": "KW"},
+//   {"name": "Kyrgyzstan", "code": "KG"},
+//   {"name": "Lao People's Democratic Republic (the)", "code": "LA"},
+//   {"name": "Latvia", "code": "LV"},
+//   {"name": "Lebanon", "code": "LB"},
+//   {"name": "Lesotho", "code": "LS"},
+//   {"name": "Liberia", "code": "LR"},
+//   {"name": "Libya", "code": "LY"},
+//   {"name": "Liechtenstein", "code": "LI"},
+//   {"name": "Lithuania", "code": "LT"},
+//   {"name": "Luxembourg", "code": "LU"},
+//   {"name": "Macao", "code": "MO"},
+//   {"name": "Madagascar", "code": "MG"},
+//   {"name": "Malawi", "code": "MW"},
+//   {"name": "Malaysia", "code": "MY"},
+//   {"name": "Maldives", "code": "MV"},
+//   {"name": "Mali", "code": "ML"},
+//   {"name": "Malta", "code": "MT"},
+//   {"name": "Marshall Islands (the)", "code": "MH"},
+//   {"name": "Martinique", "code": "MQ"},
+//   {"name": "Mauritania", "code": "MR"},
+//   {"name": "Mauritius", "code": "MU"},
+//   {"name": "Mayotte", "code": "YT"},
+//   {"name": "Mexico", "code": "MX"},
+//   {"name": "Micronesia (Federated States of)", "code": "FM"},
+//   {"name": "Moldova (the Republic of)", "code": "MD"},
+//   {"name": "Monaco", "code": "MC"},
+//   {"name": "Mongolia", "code": "MN"},
+//   {"name": "Montenegro", "code": "ME"},
+//   {"name": "Montserrat", "code": "MS"},
+//   {"name": "Morocco", "code": "MA"},
+//   {"name": "Mozambique", "code": "MZ"},
+//   {"name": "Myanmar", "code": "MM"},
+//   {"name": "Namibia", "code": "NA"},
+//   {"name": "Nauru", "code": "NR"},
+//   {"name": "Nepal", "code": "NP"},
+//   {"name": "Netherlands (the)", "code": "NL"},
+//   {"name": "Netherlands Antilles", "code": "AN"},
+//   {"name": "New Caledonia", "code": "NC"},
+//   {"name": "New Zealand", "code": "NZ"},
+//   {"name": "Nicaragua", "code": "NI"},
+//   {"name": "Niger (the)", "code": "NE"},
+//   {"name": "Nigeria", "code": "NG"},
+//   {"name": "Niue", "code": "NU"},
+//   {"name": "Norfolk Island", "code": "NF"},
+//   {"name": "Northern Mariana Islands (the)", "code": "MP"},
+//   {"name": "Norway", "code": "NO"},
+//   {"name": "Oman", "code": "OM"},
+//   {"name": "Pakistan", "code": "PK"},
+//   {"name": "Palau", "code": "PW"},
+//   {"name": "Palestine, State of", "code": "PS"},
+//   {"name": "Panama", "code": "PA"},
+//   {"name": "Papua New Guinea", "code": "PG"},
+//   {"name": "Paraguay", "code": "PY"},
+//   {"name": "Peru", "code": "PE"},
+//   {"name": "Philippines (the)", "code": "PH"},
+//   {"name": "Pitcairn", "code": "PN"},
+//   {"name": "Poland", "code": "PL"},
+//   {"name": "Portugal", "code": "PT"},
+//   {"name": "Puerto Rico", "code": "PR"},
+//   {"name": "Qatar", "code": "QA"},
+//   {"name": "Republic of North Macedonia", "code": "MK"},
+//   {"name": "Romania", "code": "RO"},
+//   {"name": "Russian Federation (the)", "code": "RU"},
+//   {"name": "Rwanda", "code": "RW"},
+//   {"name": "Réunion", "code": "RE"},
+//   {"name": "Saint Barthélemy", "code": "BL"},
+//   {"name": "Saint Helena, Ascension and Tristan da Cunha", "code": "SH"},
+//   {"name": "Saint Kitts and Nevis", "code": "KN"},
+//   {"name": "Saint Lucia", "code": "LC"},
+//   {"name": "Saint Martin (French part)", "code": "MF"},
+//   {"name": "Saint Pierre and Miquelon", "code": "PM"},
+//   {"name": "Saint Vincent and the Grenadines", "code": "VC"},
+//   {"name": "Samoa", "code": "WS"},
+//   {"name": "San Marino", "code": "SM"},
+//   {"name": "Sao Tome and Principe", "code": "ST"},
+//   {"name": "Saudi Arabia", "code": "SA"},
+//   {"name": "Senegal", "code": "SN"},
+//   {"name": "Serbia", "code": "RS"},
+//   {"name": "Seychelles", "code": "SC"},
+//   {"name": "Sierra Leone", "code": "SL"},
+//   {"name": "Singapore", "code": "SG"},
+//   {"name": "Sint Maarten (Dutch part)", "code": "SX"},
+//   {"name": "Slovakia", "code": "SK"},
+//   {"name": "Slovenia", "code": "SI"},
+//   {"name": "Solomon Islands", "code": "SB"},
+//   {"name": "Somalia", "code": "SO"},
+//   {"name": "South Africa", "code": "ZA"},
+//   {"name": "South Georgia and the South Sandwich Islands", "code": "GS"},
+//   {"name": "South Sudan", "code": "SS"},
+//   {"name": "Spain", "code": "ES"},
+//   {"name": "Sri Lanka", "code": "LK"},
+//   {"name": "Sudan (the)", "code": "SD"},
+//   {"name": "Suriname", "code": "SR"},
+//   {"name": "Svalbard and Jan Mayen", "code": "SJ"},
+//   {"name": "Sweden", "code": "SE"},
+//   {"name": "Switzerland", "code": "CH"},
+//   {"name": "Syrian Arab Republic", "code": "SY"},
+//   {"name": "Taiwan (Province of China)", "code": "TW"},
+//   {"name": "Tajikistan", "code": "TJ"},
+//   {"name": "Tanzania, United Republic of", "code": "TZ"},
+//   {"name": "Thailand", "code": "TH"},
+//   {"name": "Timor-Leste", "code": "TL"},
+//   {"name": "Togo", "code": "TG"},
+//   {"name": "Tokelau", "code": "TK"},
+//   {"name": "Tonga", "code": "TO"},
+//   {"name": "Trinidad and Tobago", "code": "TT"},
+//   {"name": "Tunisia", "code": "TN"},
+//   {"name": "Turkey", "code": "TR"},
+//   {"name": "Turkmenistan", "code": "TM"},
+//   {"name": "Turks and Caicos Islands (the)", "code": "TC"},
+//   {"name": "Tuvalu", "code": "TV"},
+//   {"name": "Uganda", "code": "UG"},
+//   {"name": "Ukraine", "code": "UA"},
+//   {"name": "United Arab Emirates (the)", "code": "AE"},
+//   {"name": "United Kingdom of Great Britain and Northern Ireland (the)", "code": "GB"},
+//   {"name": "United States Minor Outlying Islands (the)", "code": "UM"},
+//   {"name": "United States of America (the)", "code": "US"},
+//   {"name": "Uruguay", "code": "UY"},
+//   {"name": "Uzbekistan", "code": "UZ"},
+//   {"name": "Vanuatu", "code": "VU"},
+//   {"name": "Venezuela (Bolivarian Republic of)", "code": "VE"},
+//   {"name": "Viet Nam", "code": "VN"},
+//   {"name": "Virgin Islands (British)", "code": "VG"},
+//   {"name": "Virgin Islands (U.S.)", "code": "VI"},
+//   {"name": "Wallis and Futuna", "code": "WF"},
+//   {"name": "Western Sahara", "code": "EH"},
+//   {"name": "Yemen", "code": "YE"},
+//   {"name": "Zambia", "code": "ZM"},
+//   {"name": "Zimbabwe", "code": "ZW"}
+// ]
+var listOfCountries = [
+  {"name": "United States of America (the)", "code": "US"}
+]
+function appendCountries() {
+  for (var i = 0; i < listOfCountries.length; i++){
+  let listOfOption = $('<option>');
+  listOfOption.text(listOfCountries[i].name)
+  listOfOption.attr('data-index', i);
+  countryNameSelect.append(listOfOption);
+  };
+  // $('*[data-index="238"]').attr('selected', "")
+  $('*[data-index="0"]').attr('selected', "")
+}
+function findCountryCode() {
+  var countryIndex = countryNameSelect.find(':selected')[0].dataset.index
+  countryCode = listOfCountries[countryIndex].code
+}
+
+
+//////////////STATE Selection //////////////
+var stateNameSelect = $('#stateNameInput');
+
 function appendState(stateListByCountry) {
   for (var i=0; i < stateListByCountry.length; i++) {
     let listOfOption = $('<option>');
@@ -1580,11 +2477,7 @@ function findCity(stateListByCountry) {
   var selectedCity = cityNameInput.find(':selected')[0].innerText
   cityName = selectedCity;
 }
-stateNameSelect.change(function() {
-  cityNameInput.empty();
-  stateIndex = stateNameSelect.find(':selected')[0].dataset.index;
-  appendCities(citiesOfUnitedStates);
-})
+
 
 function initSearch() {
   appendCountries();  
@@ -1600,7 +2493,7 @@ function initSearch() {
 
 
 
-initSearch();
+
 
 
 
@@ -1637,11 +2530,10 @@ function readLocalStorage () {
 }
 
 function init() {
-  
+  initSearchHistory();
   getCoordinate();
   setTimeout(function(){readLocalStorage()}, 1000);
   setTimeout(function(){getApi()}, 1000);
-  
 }
 
 // Get api from openweather
@@ -1718,7 +2610,7 @@ function appendForecastData (data) {
     forecastHumidity.text(`Humidity: ${data.daily[i].humidity}%`);
 
     iconNo = data.daily[i].weather[0].icon;
-    let iconURL = `http://openweathermap.org/img/wn/${iconNo}.png`
+    let iconURL = `./assets/images/mini-${iconNo}.png`
     // let iconURL = `./assets/images/${iconNo}.png`
     forecastIcon.attr('src', iconURL);
     forecastIcons.append(forecastIcon);
@@ -1739,10 +2631,97 @@ function searchCity(event) {
   findStateCode(listOfStateUS)
   var searchedCity = cityNameInput.val();
   cityName = searchedCity;
+  searchHistoryAppend(cityName)
   geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${APIKey}`
   getCoordinate();
   setTimeout(function(){readLocalStorage()}, 1000);
   setTimeout(function(){getApi()}, 1000);
+  
 }
 
+function initSearchHistory() {
+  let tempHistoryData = JSON.parse(localStorage.getItem('searchHistory'));
+  if (tempHistoryData == null) {
+    return;
+  }
+  searchHistoryList = tempHistoryData;
+  searchHistoryList.reverse();
+  for (var i = 0; i < searchHistoryList.length; i++) {
+    var historyBtn = $('<button>');
+    historyBtn.addClass('historyBtn')
+    historyBtn.text(searchHistoryList[i]);
+    historyBtn.attr('data-index', i);
+    cityHistContainer.append(historyBtn);
+  }
+}
+
+function searchHistoryAppend(nameOfCity) {
+  let tempHistoryData = JSON.parse(localStorage.getItem('searchHistory'))
+  if (tempHistoryData == null) {
+    searchHistoryList.push(nameOfCity);
+  localStorage.setItem('searchHistory', JSON.stringify(searchHistoryList))  
+  } else if (jQuery.inArray(nameOfCity, tempHistoryData) >= 0) {
+    let indexRepetition = jQuery.inArray(nameOfCity, tempHistoryData);
+    searchHistoryList = tempHistoryData;
+    searchHistoryList.splice(indexRepetition, 1);
+    searchHistoryList.push(nameOfCity);
+    localStorage.setItem('searchHistory', JSON.stringify(searchHistoryList));
+  }
+    else if (tempHistoryData.length > 9) {
+    searchHistoryList = tempHistoryData;
+    searchHistoryList.shift();
+    searchHistoryList.push(nameOfCity);
+    localStorage.setItem('searchHistory', JSON.stringify(searchHistoryList));
+  } else {
+  searchHistoryList = tempHistoryData;
+  searchHistoryList.push(nameOfCity);
+  localStorage.setItem('searchHistory', JSON.stringify(searchHistoryList))
+  }
+  cityHistContainer.empty();
+  searchHistoryList.reverse();
+  for (var i = 0; i < searchHistoryList.length; i++) {
+    var historyBtn = $('<button>');
+    historyBtn.addClass('historyBtn')
+    historyBtn.text(searchHistoryList[i]);
+    historyBtn.attr('data-index', i);
+    cityHistContainer.append(historyBtn);
+  }
+}
+stateNameSelect.change(function() {
+  cityNameInput.empty();
+  stateIndex = stateNameSelect.find(':selected')[0].dataset.index;
+  appendCities(citiesOfUnitedStates);
+})
+
+initSearch();
 init();
+
+citySearchFormEl.on('submit', searchCity);
+$('#city-history').on('click', '.historyBtn', function(event) {
+    event.preventDefault();
+  findCountryCode();
+  findStateCode(listOfStateUS);
+  cityName = $(this).text();
+  console.log(this);
+  console.log("------------------")
+  console.log(cityName);
+  searchHistoryAppend(cityName);
+  geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${APIKey}`
+  getCoordinate();
+  setTimeout(function(){readLocalStorage()}, 1000);
+  setTimeout(function(){getApi()}, 1000);  
+})
+// $('#city-history').click(function(event) {
+//   event.preventDefault();
+//   findCountryCode();
+//   findStateCode(listOfStateUS);
+//   cityName = $(this).text();
+//   console.log(this);
+//   console.log("------------------")
+//   console.log(cityName);
+//   searchHistoryAppend(cityName);
+//   geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${APIKey}`
+//   getCoordinate();
+//   setTimeout(function(){readLocalStorage()}, 1000);
+//   setTimeout(function(){getApi()}, 1000);
+// })
