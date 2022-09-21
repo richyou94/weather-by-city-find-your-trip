@@ -2060,7 +2060,7 @@ var citiesOfUnitedStates = {
     "Worland"
   ]
 }
-
+// Variable for State code for each state
 var listOfStateUS = [
   {"name":"Alabama","code":"AL"},
   {"name":"Alaska","code":"AK"},
@@ -2113,46 +2113,39 @@ var listOfStateUS = [
   {"name":"Wisconsin","code":"WI"},
   {"name":"Wyoming","code":"WY"}
 ]
-
-//jquery var for Search cities
+//////////////////////////////////// Variables ////////////////////////////////////
+          //jquery var for Search cities
+var citySearchFormEl = $('#citySearchForm')
+var countryNameSelect = $('#countryNameInput');  
+var stateNameSelect = $('#stateNameInput');
 var cityNameInput = $('#cityNameInput');
 var searchBtn = $('#button-search');
 var cityHistContainer = $('#city-history')
-var citySearchFormEl = $('#citySearchForm')
 var searchHistoryList = [];
-// jquery variables for today's weather
+
+          // jquery variables for today's weather
 var todayCity = $('#today-city-name');
 var todayTemp = $('#today-temp');
 var todayWind = $('#today-wind');
 var todayHumid = $('#today-humidity');
 var todayUV = $('#today-UV-index');
 
-//forecast container variables
+          //forecast container variables
 var forcastContainer = $('#forecast-container');
 
-// moment js variables
+          // moment js variables
 var todayDate = moment().format("MM-DD-YYYY");
-
-//api keys
+          // openweather variables
 var APIKey = "d729cb3acec026c9b365ba8ff6fc07c5"
-
-// var city = "Los Angeles"
 var unit = "imperial"
-// var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=" + unit + "&appid=" + APIKey;
-
 var cityName = "";
 var stateCode = "";
 var stateIndex = "";
 var countryCode = "";
 var lat = "";
 var lon = "";
-
-// var queryURL = "https://api.openweathermap.org/data/3.0/onecall?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey;
 var iconNo = "";
-
-
 var geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${APIKey}`
-
 var geoStored = {
   city: cityName,
   state: stateCode,
@@ -2164,11 +2157,8 @@ var geoStored = {
 
 
 
+//////////////////////////////////// Country List (Currently unavailable due to lack of data) ////////////////////////////////////
 
-
-
-//////////////Country Selection //////////////
-var countryNameSelect = $('#countryNameInput');  
 // var listOfCountries = [
 //   {"name": "Afghanistan", "code": "AF"},
 //   {"name": "Albania", "code": "AL"},
@@ -2421,10 +2411,14 @@ var countryNameSelect = $('#countryNameInput');
 //   {"name": "Yemen", "code": "YE"},
 //   {"name": "Zambia", "code": "ZM"},
 //   {"name": "Zimbabwe", "code": "ZW"}
-// ]
 var listOfCountries = [
   {"name": "United States of America (the)", "code": "US"}
 ]
+//Above is the temporary variable with only one element, (US)
+
+
+//////////////////////////////////// functions for Countries ////////////////////////////////////
+// append the <option> of countries in <select> for Country
 function appendCountries() {
   for (var i = 0; i < listOfCountries.length; i++){
   let listOfOption = $('<option>');
@@ -2432,18 +2426,21 @@ function appendCountries() {
   listOfOption.attr('data-index', i);
   countryNameSelect.append(listOfOption);
   };
+  // "238" is for when full list of country activated for this code
   // $('*[data-index="238"]').attr('selected', "")
+  // currently its index is 0 because there is only one country in the list
   $('*[data-index="0"]').attr('selected', "")
 }
+// find the Country Code, by finding the element by "selected", for inputing into geological api
 function findCountryCode() {
   var countryIndex = countryNameSelect.find(':selected')[0].dataset.index
   countryCode = listOfCountries[countryIndex].code
 }
 
 
-//////////////STATE Selection //////////////
-var stateNameSelect = $('#stateNameInput');
+//////////////////////////////////// functions for States ////////////////////////////////////
 
+// append the <option> of states in <select> for State
 function appendState(stateListByCountry) {
   for (var i=0; i < stateListByCountry.length; i++) {
     let listOfOption = $('<option>');
@@ -2452,17 +2449,18 @@ function appendState(stateListByCountry) {
     stateNameSelect.append(listOfOption);
   }
 }
+//find the State Code, by finding the element by "Selected", for inputing into geological api
 function findStateCode(stateListByCountry) {
   stateIndex = stateNameSelect.find(':selected')[0].dataset.index;
   stateCode = stateListByCountry[stateIndex].code
 }
 
 
-//////////////CITY Selection //////////////
-// var cityNameInput = $('#cityNameInput');
+//////////////////////////////////// functions for Cities ////////////////////////////////////
+// append the <option> of cities in <select> for Cities
 function appendCities(citiesByCountry) {
   if (stateCode == "") {
-    // write code about appending cities by country without stateCode
+    // write code about appending cities by country without stateCode (currently unavailable)
   } else {
     var objectState = Object.values(citiesByCountry)[stateIndex]
     for (var i = 0; i < objectState.length; i++) {
@@ -2473,12 +2471,13 @@ function appendCities(citiesByCountry) {
     }
   }
 }
+// re-assign the variable cityName that was selected. 
 function findCity(stateListByCountry) {
   var selectedCity = cityNameInput.find(':selected')[0].innerText
   cityName = selectedCity;
 }
 
-
+// this is initial function just for the search bar in the left side to make initial setting of US, CA, Los Angeles
 function initSearch() {
   appendCountries();  
   findCountryCode();
@@ -2493,11 +2492,7 @@ function initSearch() {
 
 
 
-
-
-
-
-
+// this is the function to get geological location of data lat and lon, and store it into localStorage temporary to use in openWeather API
 function getCoordinate() {
   fetch(geoURL)
     .then(function (response) {
@@ -2505,7 +2500,9 @@ function getCoordinate() {
     })
     .then(function (data) {
       lat = data[0].lat
+      console.log(lat)
       lon = data[0].lon
+      console.log(lon)
       geoStored = {
         city: cityName,
         state: stateCode,
@@ -2513,22 +2510,18 @@ function getCoordinate() {
         lat: lat,
         lon: lon
       };
-      console.log("----GET COORDINATE----")
-      console.log(geoStored);
-      console.log("----GET COORDINATE----")
       localStorage.setItem('geoData', JSON.stringify(geoStored));
     })
 }
+// this is the function to read lat and lon from localStorage data to use in openWeather API by reassigning the variable "queryURL"
 function readLocalStorage () {
   var geoDataLog = JSON.parse(localStorage.getItem('geoData'));
-  console.log("----READ LOCAL STORAGE----")
-  console.log(geoDataLog);
-  console.log("----READ LOCAL STORAGE----")
   lat = geoDataLog.lat;
   lon = geoDataLog.lon;
   var queryURL = "https://api.openweathermap.org/data/3.0/onecall?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey;
 }
 
+//this is the initial function to run openweather API with initial search setting, which is US, CA, Los angeles
 function init() {
   initSearchHistory();
   getCoordinate();
@@ -2536,27 +2529,20 @@ function init() {
   setTimeout(function(){getApi()}, 1000);
 }
 
-// Get api from openweather
+// Get api from openweather, and append to the page
 function getApi() {
-  console.log("------GET API------")
-  console.log(lat)
-  console.log(lon)
-  console.log(cityName);
-  console.log("------GET API------")
   queryURL = "https://api.openweathermap.org/data/3.0/onecall?lat=" + lat + "&lon=" + lon + "&exclulde=minutely,hourly,alerts&units=" + unit +"&appid=" + APIKey;
   fetch(queryURL)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
-      console.log("----Weather Data----")
-      console.log(data);
-      console.log("----Weather Data----")
       appendTodayData(data);
       appendForecastData(data);
     })
 }
 
+// function for appending today's weather data, it has custom images and changes color depends on UVI index
 function appendTodayData(data) {
   todayCity.text(`${cityName} (${todayDate})`);
   todayTemp.text(`Temp: ${data.current.temp}˚F`);
@@ -2587,7 +2573,7 @@ function appendTodayData(data) {
   };
   todayUV.text(`UV Index: ${data.current.uvi} (${uvStatus})`); 
 }
-
+//function for appending forecast weather data, it has custom icon for weather.
 function appendForecastData (data) {
   var forecastContainer = $('#forecast-container');
   forecastContainer.empty();
@@ -2624,7 +2610,7 @@ function appendForecastData (data) {
     forecastContainer.append(forecastCol);
   }
 }
-
+//function for when user clicked the search button, to search that city's weather and append it into page.
 function searchCity(event) {
   event.preventDefault();
   findCountryCode();
@@ -2638,7 +2624,19 @@ function searchCity(event) {
   setTimeout(function(){getApi()}, 1000);
   
 }
-
+function searchCity2(event) {
+  event.preventDefault();
+  findCountryCode();
+  findStateCode(listOfStateUS);
+  cityName = $(this).text();
+  searchHistoryAppend(cityName);
+  geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${APIKey}`
+  // getCoordinate()
+  setTimeout(function(){getCoordinate()}, 1000);
+  setTimeout(function(){readLocalStorage()}, 1400);
+  setTimeout(function(){getApi()}, 1500);  
+}
+// initial function for bringing local storage data to append search history buttons into the page
 function initSearchHistory() {
   let tempHistoryData = JSON.parse(localStorage.getItem('searchHistory'));
   if (tempHistoryData == null) {
@@ -2655,30 +2653,39 @@ function initSearchHistory() {
   }
 }
 
+// function for appending the search history button into the page, in various situation
 function searchHistoryAppend(nameOfCity) {
   let tempHistoryData = JSON.parse(localStorage.getItem('searchHistory'))
+  // this is the situation of when we get localStorage data as null because it is empty
   if (tempHistoryData == null) {
     searchHistoryList.push(nameOfCity);
   localStorage.setItem('searchHistory', JSON.stringify(searchHistoryList))  
+  // Below is the situation of when the selected city is already exist in search history, to replace into top area
   } else if (jQuery.inArray(nameOfCity, tempHistoryData) >= 0) {
     let indexRepetition = jQuery.inArray(nameOfCity, tempHistoryData);
     searchHistoryList = tempHistoryData;
     searchHistoryList.splice(indexRepetition, 1);
     searchHistoryList.push(nameOfCity);
     localStorage.setItem('searchHistory', JSON.stringify(searchHistoryList));
+    // Below is the situaion of when search history button is max out (which is 10); 
+    // it deletes the latest one, and push the one that was searched
   }
     else if (tempHistoryData.length > 9) {
     searchHistoryList = tempHistoryData;
     searchHistoryList.shift();
     searchHistoryList.push(nameOfCity);
     localStorage.setItem('searchHistory', JSON.stringify(searchHistoryList));
+    // Other than above situations, this is regular situation of adding new history into array
   } else {
   searchHistoryList = tempHistoryData;
   searchHistoryList.push(nameOfCity);
   localStorage.setItem('searchHistory', JSON.stringify(searchHistoryList))
   }
+  // After dealing with the specific situation, it empties the button because it would not append data with the data already exist.
   cityHistContainer.empty();
+  // reverse the array, so that latest data will be at the bottom. 
   searchHistoryList.reverse();
+  // iterate the function to append the search history data according to reversed array.
   for (var i = 0; i < searchHistoryList.length; i++) {
     var historyBtn = $('<button>');
     historyBtn.addClass('historyBtn')
@@ -2687,41 +2694,20 @@ function searchHistoryAppend(nameOfCity) {
     cityHistContainer.append(historyBtn);
   }
 }
+// this is the jquery change function, in order to append city list according to the state that user selected. 
 stateNameSelect.change(function() {
   cityNameInput.empty();
   stateIndex = stateNameSelect.find(':selected')[0].dataset.index;
   appendCities(citiesOfUnitedStates);
 })
 
+//running the initial functions here
 initSearch();
 init();
 
+//this is the search button submit function, to search the city
 citySearchFormEl.on('submit', searchCity);
+//this is the click function of jquery in order to search the cities that were in search history button
 $('#city-history').on('click', '.historyBtn', function(event) {
-    event.preventDefault();
-  findCountryCode();
-  findStateCode(listOfStateUS);
-  cityName = $(this).text();
-  console.log(this);
-  console.log("------------------")
-  console.log(cityName);
-  searchHistoryAppend(cityName);
-  geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${APIKey}`
-  getCoordinate();
-  setTimeout(function(){readLocalStorage()}, 1000);
-  setTimeout(function(){getApi()}, 1000);  
+  searchCity2();
 })
-// $('#city-history').click(function(event) {
-//   event.preventDefault();
-//   findCountryCode();
-//   findStateCode(listOfStateUS);
-//   cityName = $(this).text();
-//   console.log(this);
-//   console.log("------------------")
-//   console.log(cityName);
-//   searchHistoryAppend(cityName);
-//   geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${APIKey}`
-//   getCoordinate();
-//   setTimeout(function(){readLocalStorage()}, 1000);
-//   setTimeout(function(){getApi()}, 1000);
-// })
