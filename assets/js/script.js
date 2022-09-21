@@ -1,3 +1,1175 @@
+// variable for United States cities
+var citiesOfUnitedStates = {
+  "Alabama" : [
+    "Alexander City",
+    "Andalusia",
+    "Anniston",
+    "Athens",
+    "Atmore",
+    "Auburn",
+    "Bessemer",
+    "Birmingham",
+    "Chickasaw",
+    "Clanton",
+    "Cullman",
+    "Decatur",
+    "Demopolis",
+    "Dothan",
+    "Enterprise",
+    "Eufaula",
+    "Florence",
+    "Fort Payne",
+    "Gadsden",
+    "Greenville",
+    "Guntersville",
+    "Huntsville",
+    "Jasper",
+    "Marion",
+    "Mobile",
+    "Montgomery",
+    "Opelika",
+    "Ozark",
+    "Phenix City",
+    "Prichard",
+    "Scottsboro",
+    "Selma",
+    "Sheffield",
+    "Sylacauga",
+    "Talladega",
+    "Troy",
+    "Tuscaloosa",
+    "Tuscumbia",
+    "Tuskegee"
+  ],
+  "Alaska" : [
+    "Anchorage",
+    "Cordova",
+    "Fairbanks",
+    "Haines",
+    "Homer",
+    "Juneau",
+    "Ketchikan",
+    "Kodiak",
+    "Kotzebue",
+    "Nome",
+    "Palmer",
+    "Seward",
+    "Sitka",
+    "Skagway",
+    "Valdez"
+  ],
+  "Arizona" : [
+    "Ajo",
+    "Avondale",
+    "Bisbee",
+    "Casa Grande",
+    "Chandler",
+    "Clifton",
+    "Douglas",
+    "Flagstaff",
+    "Florence",
+    "Gila Bend",
+    "Glendale",
+    "Globe",
+    "Kingman",
+    "Lake Havasu City",
+    "Mesa",
+    "Nogales",
+    "Oraibi",
+    "Phoenix",
+    "Prescott",
+    "Scottsdale",
+    "Sierra Vista",
+    "Tempe",
+    "Tombstone",
+    "Tucson",
+    "Walpi",
+    "Window Rock",
+    "Winslow",
+    "Yuma"
+  ],
+  "Arkansas" : [
+    "Arkadelphia",
+    "Arkansas Post",
+    "Batesville",
+    "Benton",
+    "Blytheville",
+    "Camden",
+    "Conway",
+    "Crossett",
+    "El Dorado",
+    "Fayetteville",
+    "Forrest City",
+    "Fort Smith",
+    "Harrison",
+    "Helena",
+    "Hope",
+    "Hot Springs",
+    "Jacksonville",
+    "Jonesboro",
+    "Little Rock",
+    "Magnolia",
+    "Morrilton",
+    "Newport",
+    "North Little Rock",
+    "Osceola",
+    "Pine Bluff",
+    "Rogers",
+    "Searcy",
+    "Stuttgart",
+    "Van Buren",
+    "West Memphis"
+  ],
+  "California": [
+    "Alameda",
+    "Alhambra",
+    "Anaheim",
+    "Antioch",
+    "Arcadia",
+    "Bakersfield",
+    "Barstow",
+    "Belmont",
+    "Berkeley",
+    "Beverly Hills",
+    "Brea",
+    "Buena Park",
+    "Burbank",
+    "Calexico",
+    "Calistoga",
+    "Carlsbad",
+    "Carmel",
+    "Chico",
+    "Chula Vista",
+    "Claremont",
+    "Compton",
+    "Concord",
+    "Coronado",
+    "Costa Mesa",
+    "Culver City",
+    "Daly City",
+    "Davis",
+    "Downey",
+    "El Centro",
+    "El Cerrito",
+    "El Monte",
+    "Escondido",
+    "Eureka",
+    "Fairfield",
+    "Fontana",
+    "Fremont",
+    "Fresno",
+    "Fullerton",
+    "Garden Grove",
+    "Glendale",
+    "Hayward",
+    "Hollywood",
+    "Huntington Beach",
+    "Indio",
+    "Inglewood",
+    "Irvine",
+    "La Habra",
+    "Laguna Beach",
+    "Lancaster",
+    "Livermore",
+    "Lodi",
+    "Lompoc",
+    "Long Beach",
+    "Los Angeles",
+    "Malibu",
+    "Martinez",
+    "Marysville",
+    "Menlo Park",
+    "Merced",
+    "Modesto",
+    "Monterey",
+    "Mountain View",
+    "Napa",
+    "Needles",
+    "Newport Beach",
+    "Norwalk",
+    "Novato",
+    "Oakland",
+    "Oceanside",
+    "Ojai",
+    "Ontario",
+    "Orange",
+    "Oroville",
+    "Oxnard",
+    "Pacific Grove",
+    "Palm Springs",
+    "Palmdale",
+    "Palo Alto",
+    "Pasadena",
+    "Petaluma",
+    "Pomona",
+    "Port Hueneme",
+    "Rancho Cucamonga",
+    "Red Bluff",
+    "Redding",
+    "Redlands",
+    "Redondo Beach",
+    "Redwood City",
+    "Richmond",
+    "Riverside",
+    "Roseville",
+    "Sacramento",
+    "Salinas",
+    "San Bernardino",
+    "San Clemente",
+    "San Diego",
+    "San Fernando",
+    "San Francisco",
+    "San Gabriel",
+    "San Jose",
+    "San Juan Capistrano",
+    "San Leandro",
+    "San Luis Obispo",
+    "San Marino",
+    "San Mateo",
+    "San Pedro",
+    "San Rafael",
+    "San Simeon",
+    "Santa Ana",
+    "Santa Barbara",
+    "Santa Clara",
+    "Santa Clarita",
+    "Santa Cruz",
+    "Santa Monica",
+    "Santa Rosa",
+    "Sausalito",
+    "Simi Valley",
+    "Sonoma",
+    "South San Francisco",
+    "Stockton",
+    "Sunnyvale",
+    "Susanville",
+    "Thousand Oaks",
+    "Torrance",
+    "Turlock",
+    "Ukiah",
+    "Vallejo",
+    "Ventura",
+    "Victorville",
+    "Visalia",
+    "Walnut Creek",
+    "Watts",
+    "West Covina",
+    "Whittier",
+    "Woodland",
+    "Yorba Linda",
+    "Yuba City"
+  ],
+  "Colorado" : [
+    "Alamosa",
+    "Aspen",
+    "Aurora",
+    "Boulder",
+    "Breckenridge",
+    "Brighton",
+    "Canon City",
+    "Central City",
+    "Climax",
+    "Colorado Springs",
+    "Cortez",
+    "Cripple Creek",
+    "Denver",
+    "Durango",
+    "Englewood",
+    "Estes Park",
+    "Fort Collins",
+    "Fort Morgan",
+    "Georgetown",
+    "Glenwood Springs",
+    "Golden",
+    "Grand Junction",
+    "Greeley",
+    "Gunnison",
+    "La Junta",
+    "Leadville",
+    "Littleton",
+    "Longmont",
+    "Loveland",
+    "Montrose",
+    "Ouray",
+    "Pagosa Springs",
+    "Pueblo",
+    "Silverton",
+    "Steamboat Springs",
+    "Sterling",
+    "Telluride",
+    "Trinidad",
+    "Vail",
+    "Walsenburg",
+    "Westminster"
+  ],
+  "Connecticut" : [
+    "Ansonia",
+    "Berlin",
+    "Bloomfield",
+    "Branford",
+    "Bridgeport",
+    "Bristol",
+    "Coventry",
+    "Danbury",
+    "Darien",
+    "Derby",
+    "East Hartford",
+    "East Haven",
+    "Enfield",
+    "Fairfield",
+    "Farmington",
+    "Greenwich",
+    "Groton",
+    "Guilford",
+    "Hamden",
+    "Hartford",
+    "Lebanon",
+    "Litchfield",
+    "Manchester",
+    "Mansfield",
+    "Meriden",
+    "Middletown",
+    "Milford",
+    "Mystic",
+    "Naugatuck",
+    "New Britain",
+    "New Haven",
+    "New London",
+    "North Haven",
+    "Norwalk",
+    "Norwich",
+    "Old Saybrook",
+    "Orange",
+    "Seymour",
+    "Shelton",
+    "Simsbury",
+    "Southington",
+    "Stamford",
+    "Stonington",
+    "Stratford",
+    "Torrington",
+    "Wallingford",
+    "Waterbury",
+    "Waterford",
+    "Watertown",
+    "West Hartford",
+    "West Haven",
+    "Westport",
+    "Wethersfield",
+    "Willimantic",
+    "Windham",
+    "Windsor",
+    "Windsor Locks",
+    "Winsted"
+  ], 
+  "Delaware" : [
+    "Dover",
+    "Lewes",
+    "Milford",
+    "New Castle",
+    "Newark",
+    "Smyrna",
+    "Wilmington"
+  ],
+  "Florida" : [
+    "Apalachicola",
+    "Bartow",
+    "Belle Glade",
+    "Boca Raton",
+    "Bradenton",
+    "Cape Coral",
+    "Clearwater",
+    "Cocoa Beach",
+    "Cocoa-Rockledge",
+    "Coral Gables",
+    "Daytona Beach",
+    "De Land",
+    "Deerfield Beach",
+    "Delray Beach",
+    "Fernandina Beach",
+    "Fort Lauderdale",
+    "Fort Myers",
+    "Fort Pierce",
+    "Fort Walton Beach",
+    "Gainesville",
+    "Hallandale Beach",
+    "Hialeah",
+    "Hollywood",
+    "Homestead",
+    "Jacksonville",
+    "Key West",
+    "Lake City",
+    "Lake Wales",
+    "Lakeland",
+    "Largo",
+    "Melbourne",
+    "Miami",
+    "Miami Beach",
+    "Naples",
+    "New Smyrna Beach",
+    "Ocala",
+    "Orlando",
+    "Ormond Beach",
+    "Palatka",
+    "Palm Bay",
+    "Palm Beach",
+    "Panama City",
+    "Pensacola",
+    "Pompano Beach",
+    "Saint Augustine",
+    "Saint Petersburg",
+    "Sanford",
+    "Sarasota",
+    "Sebring",
+    "Tallahassee",
+    "Tampa",
+    "Tarpon Springs",
+    "Titusville",
+    "Venice",
+    "West Palm Beach",
+    "White Springs",
+    "Winter Haven",
+    "Winter Park"
+  ],
+  "Georgia" : [
+    "Albany",
+    "Americus",
+    "Andersonville",
+    "Athens",
+    "Atlanta",
+    "Augusta",
+    "Bainbridge",
+    "Blairsville",
+    "Brunswick",
+    "Calhoun",
+    "Carrollton",
+    "Columbus",
+    "Dahlonega",
+    "Dalton",
+    "Darien",
+    "Decatur",
+    "Douglas",
+    "East Point",
+    "Fitzgerald",
+    "Fort Valley",
+    "Gainesville",
+    "La Grange",
+    "Macon",
+    "Marietta",
+    "Milledgeville",
+    "Plains",
+    "Rome",
+    "Savannah",
+    "Toccoa",
+    "Valdosta",
+    "Warm Springs",
+    "Warner Robins",
+    "Washington",
+    "Waycross"
+  ],
+  "Hawaii" : [
+    "Hanalei",
+    "Hilo",
+    "Honaunau",
+    "Honolulu",
+    "Kahului",
+    "Kaneohe",
+    "Kapaa",
+    "Kawaihae",
+    "Lahaina",
+    "Laie",
+    "Wahiawa",
+    "Wailuku",
+    "Waimea"
+  ], 
+  "Idaho": [
+    "Blackfoot",
+    "Boise",
+    "Bonners Ferry",
+    "Caldwell",
+    "Coeur d'Alene",
+    "Idaho City",
+    "Idaho Falls",
+    "Kellogg",
+    "Lewiston",
+    "Moscow",
+    "Nampa",
+    "Pocatello",
+    "Priest River",
+    "Rexburg",
+    "Sun Valley",
+    "Twin Falls"
+  ],
+  "Illinois": [
+    "Alton", 
+    "Arlington Heights",
+    "Arthur",
+    "Aurora",
+    "Belleville",
+    "Belvidere",
+    "Bloomington",
+    "Brookfield",
+    "Cahokia",
+    "Cairo",
+    "Calumet City",
+    "Canton",
+    "Carbondale",
+    "Carlinville",
+    "Carthage",
+    "Centralia",
+    "Champaign",
+    "Charleston",
+    "Chester",
+    "Chicago",
+    "Chicago Heights",
+    "Cicero",
+    "Collinsville",
+    "Danville",
+    "Decatur",
+    "DeKalb",
+    "Des Plaines",
+    "Dixon",
+    "East Moline",
+    "East Saint Louis",
+    "Effingham",
+    "Elgin",
+    "Elmhurst",
+    "Evanston",
+    "Freeport",
+    "Galena",
+    "Galesburg",
+    "Glen Ellyn",
+    "Glenview",
+    "Granite City",
+    "Harrisburg",
+    "Herrin",
+    "Highland Park",
+    "Jacksonville",
+    "Joliet",
+    "Kankakee",
+    "Kaskaskia",
+    "Kewanee",
+    "La Salle",
+    "Lake Forest",
+    "Libertyville",
+    "Lincoln",
+    "Lisle",
+    "Lombard",
+    "Macomb",
+    "Mattoon",
+    "Moline",
+    "Monmouth",
+    "Mount Vernon",
+    "Mundelein",
+    "Naperville",
+    "Nauvoo",
+    "Normal",
+    "North Chicago",
+    "Oak Park",
+    "Oregon",
+    "Ottawa",
+    "Palatine",
+    "Park Forest",
+    "Park Ridge",
+    "Pekin",
+    "Peoria",
+    "Petersburg",
+    "Pontiac",
+    "Quincy",
+    "Rantoul",
+    "River Forest",
+    "Rock Island",
+    "Rockford",
+    "Salem",
+    "Shawneetown",
+    "Skokie",
+    "South Holland",
+    "Springfield",
+    "Streator",
+    "Summit",
+    "Urbana",
+    "Vandalia",
+    "Virden",
+    "Waukegan",
+    "Wheaton",
+    "Wilmette",
+    "Winnetka",
+    "Wood River",
+    "Zion"
+  ],
+  "Indiana" : [
+    "Anderson", 
+    "Bedford",
+    "Bloomington",
+    "Columbus",
+    "Connersville",
+    "Corydon",
+    "Crawfordsville",
+    "East Chicago",
+    "Elkhart",
+    "Elwood",
+    "Evansville",
+    "Fort Wayne",
+    "French Lick",
+    "Gary",
+    "Geneva",
+    "Goshen",
+    "Greenfield",
+    "Hammond",
+    "Hobart",
+    "Huntington",
+    "Indianapolis",
+    "Jeffersonville",
+    "Kokomo",
+    "Lafayette",
+    "Madison",
+    "Marion",
+    "Michigan City",
+    "Mishawaka",
+    "Muncie",
+    "Nappanee",
+    "Nashville",
+    "New Albany",
+    "New Castle",
+    "New Harmony",
+    "Peru",
+    "Plymouth",
+    "Richmond",
+    "Santa Claus",
+    "Shelbyville",
+    "South Bend",
+    "Terre Haute",
+    "Valparaiso",
+    "Vincennes",
+    "Wabash",
+    "West Lafayette"
+  ],
+  "Iowa": [
+    "Amana Colonies",
+    "Ames",
+    "Boone",
+    "Burlington",
+    "Cedar Falls",
+    "Cedar Rapids",
+    "Charles City",
+    "Cherokee",
+    "Clinton",
+    "Council Bluffs",
+    "Davenport",
+    "Des Moines",
+    "Dubuque",
+    "Estherville",
+    "Fairfield",
+    "Fort Dodge",
+    "Grinnell",
+    "Indianola",
+    "Iowa City",
+    "Keokuk",
+    "Mason City",
+    "Mount Pleasant",
+    "Muscatine",
+    "Newton",
+    "Oskaloosa",
+    "Ottumwa",
+    "Sioux City",
+    "Waterloo",
+    "Webster City",
+    "West Des Moines"
+  ],
+  "Kansas" : [
+    "Abilene",
+    "Arkansas City",
+    "Atchison",
+    "Chanute",
+    "Coffeyville",
+    "Council Grove",
+    "Dodge City",
+    "Emporia",
+    "Fort Scott",
+    "Garden City",
+    "Great Bend",
+    "Hays",
+    "Hutchinson",
+    "Independence",
+    "Junction City",
+    "Kansas City",
+    "Lawrence",
+    "Leavenworth",
+    "Liberal",
+    "Manhattan",
+    "McPherson",
+    "Medicine Lodge",
+    "Newton",
+    "Olathe",
+    "Osawatomie",
+    "Ottawa",
+    "Overland Park",
+    "Pittsburg",
+    "Salina",
+    "Shawnee",
+    "Smith Center",
+    "Topeka",
+    "Wichita"
+  ],
+  "Kentucky" : [
+    "Ashland",
+    "Barbourville",
+    "Bardstown",
+    "Berea",
+    "Boonesborough",
+    "Bowling Green",
+    "Campbellsville",
+    "Covington",
+    "Danville",
+    "Elizabethtown",
+    "Frankfort",
+    "Harlan",
+    "Harrodsburg",
+    "Hazard",
+    "Henderson",
+    "Hodgenville",
+    "Hopkinsville",
+    "Lexington",
+    "Louisville",
+    "Mayfield",
+    "Maysville",
+    "Middlesboro",
+    "Newport",
+    "Owensboro",
+    "Paducah",
+    "Paris",
+    "Richmond"
+  ],
+  "Louisiana" : [
+    "Abbeville",
+    "Alexandria",
+    "Bastrop", 
+    "Baton Rouge",
+    "Bogalusa",
+    "Bossier City",
+    "Gretna",
+    "Houma",
+    "Lafayette",
+    "Lake Charles",
+    "Monroe",
+    "Morgan City",
+    "Natchitoches",
+    "New Iberia",
+    "New Orleans",
+    "Opelousas",
+    "Ruston",
+    "Saint Martinville",
+    "Shreveport",
+    "Thibodaux"
+  ], 
+  "Maine" : [
+    "Auburn",
+    "Augusta",
+    "Bangor",
+    "Bar Harbor",
+    "Bath",
+    "Belfast",
+    "Biddeford",
+    "Boothbay Harbor",
+    "Brunswick",
+    "Calais",
+    "Caribou",
+    "Castine",
+    "Eastport",
+    "Ellsworth",
+    "Farmington",
+    "Fort Kent",
+    "Gardiner",
+    "Houlton",
+    "Kennebunkport",
+    "Kittery",
+    "Lewiston",
+    "Lubec",
+    "Machias",
+    "Orono",
+    "Portland",
+    "Presque Isle",
+    "Rockland",
+    "Rumford",
+    "Saco",
+    "Scarborough",
+    "Waterville",
+    "York"
+  ],
+  "Maryland":[
+    "Aberdeen",
+    "Annapolis",
+    "Baltimore",
+    "Bethesda-Chevy Chase",
+    "Bowie",
+    "Cambridge",
+    "Catonsville",
+    "College Park",
+    "Columbia",
+    "Cumberland",
+    "Easton",
+    "Elkton",
+    "Emmitsburg",
+    "Frederick",
+    "Greenbelt",
+    "Hagerstown",
+    "Hyattsville",
+    "Laurel",
+    "Oakland",
+    "Ocean City",
+    "Rockville",
+    "Saint Marys City",
+    "Salisbury",
+    "Silver Spring",
+    "Takoma Park",
+    "Towson",
+    "Westminster"
+  ],
+  "Massachusetts":[
+    "Abington",
+    "Adams",
+    "Amesbury",
+    "Amherst",
+    "Andover",
+    "Arlington",
+    "Athol",
+    "Attleboro",
+    "Barnstable",
+    "Bedford",
+    "Beverly",
+    "Boston",
+    "Bourne",
+    "Braintree",
+    "Brockton",
+    "Brookline",
+    "Cambridge",
+    "Canton",
+    "Charlestown",
+    "Chelmsford",
+    "Chelsea",
+    "Chicopee",
+    "Clinton",
+    "Cohasset",
+    "Concord",
+    "Danvers",
+    "Dartmouth",
+    "Dedham",
+    "Dennis",
+    "Duxbury",
+    "Eastham",
+    "Edgartown",
+    "Everett",
+    "Fairhaven",
+    "Fall River",
+    "Falmouth",
+    "Fitchburg",
+    "Framingham",
+    "Gloucester",
+    "Great Barrington",
+    "Greenfield",
+    "Groton",
+    "Harwich",
+    "Haverhill",
+    "Hingham",
+    "Holyoke",
+    "Hyannis",
+    "Ipswich",
+    "Lawrence",
+    "Lenox",
+    "Leominster",
+    "Lexington",
+    "Lowell",
+    "Ludlow",
+    "Lynn",
+    "Malden",
+    "Marblehead",
+    "Marlborough",
+    "Medford",
+    "Milton",
+    "Nahant",
+    "Natick",
+    "New Bedford",
+    "Newburyport",
+    "Newton",
+    "North Adams",
+    "Northampton",
+    "Norton",
+    "Norwood",
+    "Peabody",
+    "Pittsfield",
+    "Plymouth",
+    "Provincetown",
+    "Quincy",
+    "Randolph",
+    "Revere",
+    "Salem",
+    "Sandwich",
+    "Saugus",
+    "Somerville",
+    "South Hadley",
+    "Springfield",
+    "Stockbridge",
+    "Stoughton",
+    "Sturbridge",
+    "Sudbury",
+    "Taunton",
+    "Tewksbury",
+    "Truro",
+    "Watertown",
+    "Webster",
+    "Wellesley",
+    "Wellfleet",
+    "West Bridgewater",
+    "West Springfield",
+    "Westfield",
+    "Weymouth",
+    "Whitman",
+    "Williamstown",
+    "Woburn",
+    "Woods Hole",
+    "Worcester"
+  ],
+  "Michigan":[
+    "Adrian",
+    "Alma",
+    "Ann Arbor",
+    "Battle Creek",
+    "Bay City",
+    "Benton Harbor",
+    "Bloomfield Hills",
+    "Cadillac",
+    "Charlevoix",
+    "Cheboygan",
+    "Dearborn",
+    "Detroit",
+    "East Lansing",
+    "Eastpointe",
+    "Ecorse",
+    "Escanaba",
+    "Flint",
+    "Grand Haven",
+    "Grand Rapids",
+    "Grayling",
+    "Grosse Pointe",
+    "Hancock",
+    "Highland Park",
+    "Holland",
+    "Houghton",
+    "Interlochen",
+    "Iron Mountain",
+    "Ironwood",
+    "Ishpeming",
+    "Jackson",
+    "Kalamazoo",
+    "Lansing",
+    "Livonia",
+    "Ludington",
+    "Mackinaw City",
+    "Manistee",
+    "Marquette",
+    "Menominee",
+    "Midland",
+    "Monroe",
+    "Mount Clemens",
+    "Mount Pleasant",
+    "Muskegon",
+    "Niles",
+    "Petoskey",
+    "Pontiac",
+    "Port Huron",
+    "Royal Oak",
+    "Saginaw",
+    "Saint Ignace",
+    "Saint Joseph",
+    "Sault Sainte Marie",
+    "Traverse City",
+    "Trenton",
+    "Warren",
+    "Wyandotte",
+    "Ypsilanti"
+  ],
+  "Minnesota" : [
+    "Albert Lea",
+    "Alexandria",
+    "Austin",
+    "Bemidji",
+    "Bloomington",
+    "Brainerd",
+    "Crookston",
+    "Duluth",
+    "Ely",
+    "Eveleth",
+    "Faribault",
+    "Fergus Falls",
+    "Hastings",
+    "Hibbing",
+    "International Falls",
+    "Little Falls",
+    "Mankato",
+    "Minneapolis",
+    "Moorhead",
+    "New Ulm",
+    "Northfield",
+    "Owatonna",
+    "Pipestone",
+    "Red Wing",
+    "Rochester",
+    "Saint Cloud",
+    "Saint Paul",
+    "Sauk Centre",
+    "South Saint Paul",
+    "Stillwater",
+    "Virginia",
+    "Willmar",
+    "Winona"
+  ],
+  "Mississippi" : [
+    "Bay Saint Louis",
+    "Biloxi",
+    "Canton",
+    "Clarksdale",
+    "Columbia",
+    "Columbus",
+    "Corinth",
+    "Greenville",
+    "Greenwood",
+    "Grenada",
+    "Gulfport",
+    "Hattiesburg",
+    "Holly Springs",
+    "Jackson",
+    "Laurel",
+    "Meridian",
+    "Natchez",
+    "Ocean Springs",
+    "Oxford",
+    "Pascagoula",
+    "Pass Christian",
+    "Philadelphia",
+    "Port Gibson",
+    "Starkville",
+    "Tupelo",
+    "Vicksburg",
+    "West Point",
+    "Yazoo City"
+  ],
+  "Missouri":[
+    "Boonville",
+    "Branson",
+    "Cape Girardeau",
+    "Carthage",
+    "Chillicothe",
+    "Clayton",
+    "Columbia",
+    "Excelsior Springs",
+    "Ferguson",
+    "Florissant",
+    "Fulton",
+    "Hannibal",
+    "Independence",
+    "Jefferson City",
+    "Joplin",
+    "Kansas City",
+    "Kirksville",
+    "Lamar",
+    "Lebanon",
+    "Lexington",
+    "Maryville",
+    "Mexico",
+    "Monett",
+    "Neosho",
+    "New Madrid",
+    "Rolla",
+    "Saint Charles",
+    "Saint Joseph",
+    "Saint Louis",
+    "Saint Genevieve",
+    "Salem",
+    "Sedalia",
+    "Springfield",
+    "Warrensburg",
+    "West Plains"
+  ],
+  "Montana":[
+    "Anaconda",
+    "Billings",
+    "Bozeman",
+    "Butte",
+    "Dillon",
+    "Fort Benton",
+    "Glendive",
+    "Great Falls",
+    "Havre",
+    "Helena",
+    "Kalispell",
+    "Lewistown",
+    "Livingston",
+    "Miles City",
+    "Missoula",
+    "Virginia City"
+  ],
+  "Nebraska":[
+    "Beatrice",
+    "Bellevue",
+    "Boys Town",
+    "Chadron",
+    "Columbus",
+    "Fremont",
+    "Grand Island",
+    "Hastings",
+    "Kearney",
+    "Lincoln",
+    "McCook",
+    "Minden",
+    "Nebraska City",
+    "Norfolk",
+    "North Platte",
+    "Omaha",
+    "Plattsmouth",
+    "Red Cloud",
+    "Sidney"
+  ],
+  "Nevada" : [
+    "Boulder City",
+    "Carson City",
+    "Elko",
+    "Ely",
+    "Fallon",
+    "Genoa",
+    "Goldfield",
+    "Henderson",
+    "Las Vegas",
+    "North Las Vegas",
+    "Reno",
+    "Sparks",
+    "Virginia City",
+    "Winnemucca"
+  ],
+  "New Hampshire": [
+    "Berlin",
+    "Claremont",
+    "Concord",
+    "Derry",
+    "Dover",
+    "Durham",
+    "Exeter",
+    "Franklin",
+    "Hanover",
+    "Hillsborough",
+    "Keene",
+    "Laconia",
+    "Lebanon",
+    "Manchester",
+    "Nashua",
+    "Peterborough",
+    "Plymouth",
+    "Portsmouth",
+    "Rochester",
+    "Salem",
+    "Somersworth"
+  ]
+}
+
 //jquery var for Search cities
 var cityNameInput = $('#cityNameInput');
 var searchBtn = $('#button-search');
@@ -24,9 +1196,10 @@ var APIKey = "d729cb3acec026c9b365ba8ff6fc07c5"
 var unit = "imperial"
 // var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=" + unit + "&appid=" + APIKey;
 
-var cityName = "Los Angeles";
-var stateCode = "CA";
-var countryCode = "US";
+var cityName = "";
+var stateCode = "";
+var stateIndex = "";
+var countryCode = "";
 var lat = "";
 var lon = "";
 
@@ -44,149 +1217,16 @@ var geoStored = {
   lon: lon
 }
 
-function getCoordinate() {
-  fetch(geoURL)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      lat = data[0].lat
-      lon = data[0].lon
-      geoStored = {
-        city: cityName,
-        state: stateCode,
-        country: countryCode,
-        lat: lat,
-        lon: lon
-      };
-      console.log("----GET COORDINATE----")
-      console.log(geoStored);
-      console.log("----GET COORDINATE----")
-      localStorage.setItem('geoData', JSON.stringify(geoStored));
-    })
-}
-function readLocalStorage () {
-  var geoDataLog = JSON.parse(localStorage.getItem('geoData'));
-  console.log("----READ LOCAL STORAGE----")
-  console.log(geoDataLog);
-  console.log("----READ LOCAL STORAGE----")
-  lat = geoDataLog.lat;
-  lon = geoDataLog.lon;
-  var queryURL = "https://api.openweathermap.org/data/3.0/onecall?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey;
-}
-
-function init() {
-  getCoordinate();
-  setTimeout(function(){readLocalStorage()}, 1000);
-  setTimeout(function(){getApi()}, 1000);
-  
-}
-
-// Get api from openweather
-function getApi() {
-  console.log("------GET API------")
-  console.log(lat)
-  console.log(lon)
-  console.log(cityName);
-  console.log("------GET API------")
-  queryURL = "https://api.openweathermap.org/data/3.0/onecall?lat=" + lat + "&lon=" + lon + "&exclulde=minutely,hourly,alerts&units=" + unit +"&appid=" + APIKey;
-  fetch(queryURL)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      console.log("----Weather Data----")
-      console.log(data);
-      console.log("----Weather Data----")
-      appendTodayData(data);
-      appendForecastData(data);
-    })
-}
-
-function appendTodayData(data) {
-  todayCity.text(`${cityName} (${todayDate})`);
-  todayTemp.text(`Temp: ${data.current.temp}˚F`);
-  todayWind.text(`Wind: ${data.current.wind_speed} mph`);
-  todayHumid.text(`Humidity: ${data.current.humidity}%`);
-  
-  var todayIcon = $('#today-icon');
-  iconNo = data.current.weather[0].icon;
-  let iconURL = `./assets/images/${iconNo}.png`
-  todayIcon.attr('src', iconURL);
-
-
-  var testingVar = data.current.uvi;
-  var uvStatus = "";
-  if (testingVar < 3) {
-    todayUV.css('color', 'green')
-    uvStatus = "Low"
-  } else if (testingVar < 6) {
-    todayUV.css('color', 'yellow')
-    uvStatus = "Moderate"
-    todayUV.css('background-color', 'grey');
-  } else if (testingVar < 8) {
-    todayUV.css('color', 'orange')
-    uvStatus = "HIGH"
-  } else {
-    todayUV.css('color', 'red')
-    uvStatus = "VERY HIGH"
-  };
-  todayUV.text(`UV Index: ${data.current.uvi} (${uvStatus})`); 
-}
-
-function appendForecastData (data) {
-  // createArrayOfDate(data);
-  for (var i = 1; i < 6; i++) {
-    var forecastContainer = $('#forecast-container');
-    var forecastCol = $('<div>');
-    var forecastDates = $('<h4>');
-    var forecastIcons = $('<div>');
-    var forecastTemps = $('<h5>');
-    var forecastWinds = $('<h5>');
-    var forecastHumidity = $('<h5>');
-    var forecastIcon = $('<img>');
-
-    forecastCol.addClass('col');
-    forecastIcons.addClass('icon-forecast');
-
-    forecastDates.text(`${moment(data.daily[i].dt, 'X').format('MM-DD-YYYY')}`);
-    forecastTemps.text(`Temp: ${data.daily[i].temp.day}˚F`);
-    forecastWinds.text(`Wind: ${data.daily[i].wind_speed} mph`);
-    forecastHumidity.text(`Humidity: ${data.daily[i].humidity}%`);
-
-    iconNo = data.daily[i].weather[0].icon;
-    let iconURL = `http://openweathermap.org/img/wn/${iconNo}.png`
-    // let iconURL = `./assets/images/${iconNo}.png`
-    forecastIcon.attr('src', iconURL);
-    forecastIcons.append(forecastIcon);
-    
-    forecastCol.append(forecastDates);
-    forecastCol.append(forecastIcons);
-    forecastCol.append(forecastTemps);
-    forecastCol.append(forecastWinds);
-    forecastCol.append(forecastHumidity);
-
-    forecastContainer.append(forecastCol);
-  }
-}
-
-function searchCity(event) {
-  event.preventDefault();
-  var searchedCity = cityNameInput.val();
-  cityName = searchedCity;
-  geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${APIKey}`
-  cityNameInput.val("");
-  getCoordinate();
-  setTimeout(function(){readLocalStorage()}, 1000);
-  setTimeout(function(){getApi()}, 1000);
-}
 
 citySearchFormEl.on('submit', searchCity)
 
-init();
 
 
-const listOfCountries = [
+
+//////////////Country Selection //////////////
+var countryNameSelect = $('#countryNameInput');  
+var listOfCountries = [
+  {"name": "Afghanistan", "code": "AF"},
   {"name": "Albania", "code": "AL"},
   {"name": "Åland Islands", "code": "AX"},
   {"name": "Algeria", "code": "DZ"},
@@ -304,8 +1344,9 @@ const listOfCountries = [
   {"name": "Kazakhstan", "code": "KZ"},
   {"name": "Kenya", "code": "KE"},
   {"name": "Kiribati", "code": "KI"},
-  {"name": "Korea (the Democratic People's Republic of)", "code": "KP"},
-  {"name": "Korea (the Republic of)", "code": "KR"},
+  {"name": "Korea (North Korea, the Democratic People's Republic of)", "code": "KP"},
+  {"name": "Korea (South Korea, the Republic of)", "code": "KR"},
+  {"name": "Kosovo", "code": "XK"},
   {"name": "Kuwait", "code": "KW"},
   {"name": "Kyrgyzstan", "code": "KG"},
   {"name": "Lao People's Democratic Republic (the)", "code": "LA"},
@@ -343,6 +1384,7 @@ const listOfCountries = [
   {"name": "Nauru", "code": "NR"},
   {"name": "Nepal", "code": "NP"},
   {"name": "Netherlands (the)", "code": "NL"},
+  {"name": "Netherlands Antilles", "code": "AN"},
   {"name": "New Caledonia", "code": "NC"},
   {"name": "New Zealand", "code": "NZ"},
   {"name": "Nicaragua", "code": "NI"},
@@ -436,16 +1478,271 @@ const listOfCountries = [
   {"name": "Zambia", "code": "ZM"},
   {"name": "Zimbabwe", "code": "ZW"}
 ]
-
-var countryNameSelect = $('#countryNameInput');
 function appendCountries() {
   for (var i = 0; i < listOfCountries.length; i++){
   let listOfOption = $('<option>');
   listOfOption.text(listOfCountries[i].name)
   listOfOption.attr('data-index', i);
   countryNameSelect.append(listOfOption);
-  }
+  };
   $('*[data-index="235"]').attr('selected', "")
 }
+function findCountryCode() {
+  var countryIndex = countryNameSelect.find(':selected')[0].dataset.index
+  countryCode = listOfCountries[countryIndex].code
+}
 
-appendCountries();
+
+//////////////STATE Selection //////////////
+var stateNameSelect = $('#stateNameInput');
+var listOfStateUS = [
+  {"name":"Alabama","code":"AL"},
+  {"name":"Alaska","code":"AK"},
+  {"name":"Arizona","code":"AZ"},
+  {"name":"Arkansas","code":"AR"},
+  {"name":"California","code":"CA"},
+  {"name":"Colorado","code":"CO"},
+  {"name":"Connecticut","code":"CT"},
+  {"name":"Delaware","code":"DE"},
+  {"name":"Florida","code":"FL"},
+  {"name":"Georgia","code":"GA"},
+  {"name":"Hawaii","code":"HI"},
+  {"name":"Idaho","code":"ID"},
+  {"name":"Illinois","code":"IL"},
+  {"name":"Indiana","code":"IN"},
+  {"name":"Iowa","code":"IA"},
+  {"name":"Kansas","code":"KS"},
+  {"name":"Kentucky","code":"KY"},
+  {"name":"Louisiana","code":"LA"},
+  {"name":"Maine","code":"ME"},
+  {"name":"Maryland","code":"MD"},
+  {"name":"Massachusetts","code":"MA"},
+  {"name":"Michigan","code":"MI"},
+  {"name":"Minnesota","code":"MN"},
+  {"name":"Mississippi","code":"MS"},
+  {"name":"Missouri","code":"MO"},
+  {"name":"Montana","code":"MT"},
+  {"name":"Nebraska","code":"NE"},
+  {"name":"Nevada","code":"NV"},
+  {"name":"New Hampshire","code":"NH"},
+  {"name":"New Jersey","code":"NJ"},
+  {"name":"New Mexico","code":"NM"},
+  {"name":"New York","code":"NY"},
+  {"name":"North Carolina","code":"NC"},
+  {"name":"North Dakota","code":"ND"},
+  {"name":"Ohio","code":"OH"},
+  {"name":"Oklahoma","code":"OK"},
+  {"name":"Oregon","code":"OR"},
+  {"name":"Pennsylvania","code":"PA"},
+  {"name":"Rhode Island","code":"RI"},
+  {"name":"South Carolina","code":"SC"},
+  {"name":"South Dakota","code":"SD"},
+  {"name":"Tennessee","code":"TN"},
+  {"name":"Texas","code":"TX"},
+  {"name":"Utah","code":"UT"},
+  {"name":"Vermont","code":"VT"},
+  {"name":"Virginia","code":"VA"},
+  {"name":"Washington","code":"WA"},
+  {"name":"West Virginia","code":"WV"},
+  {"name":"Wisconsin","code":"WI"},
+  {"name":"Wyoming","code":"WY"}
+]
+function appendState(stateListByCountry) {
+  for (var i=0; i < stateListByCountry.length; i++) {
+    let listOfOption = $('<option>');
+    listOfOption.text(listOfStateUS[i].name);
+    listOfOption.attr('data-index', i);
+    stateNameSelect.append(listOfOption);
+  }
+}
+function findStateCode(stateListByCountry) {
+  stateIndex = stateNameSelect.find(':selected')[0].dataset.index;
+  stateCode = stateListByCountry[stateIndex].code
+}
+
+
+//////////////CITY Selection //////////////
+// var cityNameInput = $('#cityNameInput');
+function appendCities(citiesByCountry) {
+  if (stateCode == "") {
+    // write code about appending cities by country without stateCode
+  } else {
+    var objectState = Object.values(citiesByCountry)[stateIndex]
+    for (var i = 0; i < objectState.length; i++) {
+      let listOfOption = $('<option>');
+      listOfOption.text(objectState[i])
+      listOfOption.attr('data-index', i);
+      cityNameInput.append(listOfOption);
+    }
+  }
+}
+function findCity(stateListByCountry) {
+  var selectedCity = cityNameInput.find(':selected')[0].innerText
+  cityName = selectedCity;
+}
+stateNameSelect.change(function() {
+  cityNameInput.empty();
+  stateIndex = stateNameSelect.find(':selected')[0].dataset.index;
+  appendCities(citiesOfUnitedStates);
+})
+
+function initSearch() {
+  appendCountries();  
+  findCountryCode();
+  appendState(listOfStateUS);
+  stateNameSelect.find('[data-index = 4]').attr('selected', "")
+  findStateCode(listOfStateUS);
+  appendCities(citiesOfUnitedStates);
+  cityNameInput.find('[data-index = 53]').attr('selected', "");
+  findCity(citiesOfUnitedStates);
+  geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${APIKey}`
+}
+
+
+
+initSearch();
+
+
+
+
+function getCoordinate() {
+  fetch(geoURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      lat = data[0].lat
+      lon = data[0].lon
+      geoStored = {
+        city: cityName,
+        state: stateCode,
+        country: countryCode,
+        lat: lat,
+        lon: lon
+      };
+      console.log("----GET COORDINATE----")
+      console.log(geoStored);
+      console.log("----GET COORDINATE----")
+      localStorage.setItem('geoData', JSON.stringify(geoStored));
+    })
+}
+function readLocalStorage () {
+  var geoDataLog = JSON.parse(localStorage.getItem('geoData'));
+  console.log("----READ LOCAL STORAGE----")
+  console.log(geoDataLog);
+  console.log("----READ LOCAL STORAGE----")
+  lat = geoDataLog.lat;
+  lon = geoDataLog.lon;
+  var queryURL = "https://api.openweathermap.org/data/3.0/onecall?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey;
+}
+
+function init() {
+  
+  getCoordinate();
+  setTimeout(function(){readLocalStorage()}, 1000);
+  setTimeout(function(){getApi()}, 1000);
+  
+}
+
+// Get api from openweather
+function getApi() {
+  console.log("------GET API------")
+  console.log(lat)
+  console.log(lon)
+  console.log(cityName);
+  console.log("------GET API------")
+  queryURL = "https://api.openweathermap.org/data/3.0/onecall?lat=" + lat + "&lon=" + lon + "&exclulde=minutely,hourly,alerts&units=" + unit +"&appid=" + APIKey;
+  fetch(queryURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log("----Weather Data----")
+      console.log(data);
+      console.log("----Weather Data----")
+      appendTodayData(data);
+      appendForecastData(data);
+    })
+}
+
+function appendTodayData(data) {
+  todayCity.text(`${cityName} (${todayDate})`);
+  todayTemp.text(`Temp: ${data.current.temp}˚F`);
+  todayWind.text(`Wind: ${data.current.wind_speed} mph`);
+  todayHumid.text(`Humidity: ${data.current.humidity}%`);
+  
+  var todayIcon = $('#today-icon');
+  iconNo = data.current.weather[0].icon;
+  let iconURL = `./assets/images/${iconNo}.png`
+  todayIcon.attr('src', iconURL);
+
+
+  var testingVar = data.current.uvi;
+  var uvStatus = "";
+  if (testingVar < 3) {
+    todayUV.css('color', 'green')
+    uvStatus = "Low"
+  } else if (testingVar < 6) {
+    todayUV.css('color', 'yellow')
+    uvStatus = "Moderate"
+    todayUV.css('background-color', 'grey');
+  } else if (testingVar < 8) {
+    todayUV.css('color', 'orange')
+    uvStatus = "HIGH"
+  } else {
+    todayUV.css('color', 'red')
+    uvStatus = "VERY HIGH"
+  };
+  todayUV.text(`UV Index: ${data.current.uvi} (${uvStatus})`); 
+}
+
+function appendForecastData (data) {
+  var forecastContainer = $('#forecast-container');
+  forecastContainer.empty();
+  for (var i = 1; i < 6; i++) {
+    
+    var forecastCol = $('<div>');
+    var forecastDates = $('<h4>');
+    var forecastIcons = $('<div>');
+    var forecastTemps = $('<h5>');
+    var forecastWinds = $('<h5>');
+    var forecastHumidity = $('<h5>');
+    var forecastIcon = $('<img>');
+
+    forecastCol.addClass('col');
+    forecastIcons.addClass('icon-forecast');
+
+    forecastDates.text(`${moment(data.daily[i].dt, 'X').format('MM-DD-YYYY')}`);
+    forecastTemps.text(`Temp: ${data.daily[i].temp.day}˚F`);
+    forecastWinds.text(`Wind: ${data.daily[i].wind_speed} mph`);
+    forecastHumidity.text(`Humidity: ${data.daily[i].humidity}%`);
+
+    iconNo = data.daily[i].weather[0].icon;
+    let iconURL = `http://openweathermap.org/img/wn/${iconNo}.png`
+    // let iconURL = `./assets/images/${iconNo}.png`
+    forecastIcon.attr('src', iconURL);
+    forecastIcons.append(forecastIcon);
+    
+    forecastCol.append(forecastDates);
+    forecastCol.append(forecastIcons);
+    forecastCol.append(forecastTemps);
+    forecastCol.append(forecastWinds);
+    forecastCol.append(forecastHumidity);
+
+    forecastContainer.append(forecastCol);
+  }
+}
+
+function searchCity(event) {
+  event.preventDefault();
+  findCountryCode();
+  findStateCode(listOfStateUS)
+  var searchedCity = cityNameInput.val();
+  cityName = searchedCity;
+  geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&appid=${APIKey}`
+  getCoordinate();
+  setTimeout(function(){readLocalStorage()}, 1000);
+  setTimeout(function(){getApi()}, 1000);
+}
+
+init();
